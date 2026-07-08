@@ -468,13 +468,6 @@ Have a question, bug report, or idea? I'd love to hear from you.
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** — use it, modify it, share it freely.
-See [LICENSE](LICENSE) for full details.
-
----
-
 ## 🙏 Acknowledgments
 
 This project was built with these amazing open-source tools:
