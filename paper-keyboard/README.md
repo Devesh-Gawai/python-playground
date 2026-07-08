@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/OpenCV-4.8+-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
   <img src="https://img.shields.io/badge/MediaPipe-Hand%20Tracking-FF6F00?style=for-the-badge&logo=google&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Version%201.0-brightgreen?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-NONE-yellow?style=for-the-badge"/>
 </p>
 
 ---
