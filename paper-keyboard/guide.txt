@@ -1,0 +1,11 @@
+# 1. Install deps (from paper_keyboard/ folder)
+pip install -r requirements.txt
+
+# 2. Run the server on your computer
+python main.py
+# → Prints your LAN IP + optional QR code
+
+# 3. On your phone: open  http://<your-computer-ip>:8000
+# 4. Mount phone overhead, all 4 ArUco markers visible
+# 5. Tap  📐 CALIBRATE  → server detects markers → "Calibration successful!"
+# 6. Type on the paper!
