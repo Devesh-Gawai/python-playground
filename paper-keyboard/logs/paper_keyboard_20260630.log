@@ -1,0 +1,595 @@
+12:38:32 | INFO     | main                   | Paper Keyboard starting …
+12:38:47 | INFO     | core.typer             | pynput keyboard controller ready
+12:38:54 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+12:38:54 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+12:38:54 | DEBUG    | asyncio                | Using proactor: IocpProactor
+12:38:56 | INFO     | networking.server      | WS client connected  (total=1)
+12:39:05 | INFO     | networking.server      | WS client disconnected
+12:39:05 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+12:41:35 | INFO     | main                   | Paper Keyboard starting …
+12:41:41 | INFO     | core.typer             | pynput keyboard controller ready
+12:41:42 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+12:41:42 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+12:41:43 | DEBUG    | asyncio                | Using proactor: IocpProactor
+12:41:47 | INFO     | networking.server      | WS client connected  (total=1)
+12:41:48 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657932907.0ms  p95=-1782657932907.0ms  max=-1782657932907.0ms
+12:41:53 | INFO     | networking.server      | WS client connected  (total=2)
+12:41:53 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657932996.4ms  p95=-1782657932907.0ms  max=-1782657932889.0ms
+12:41:58 | INFO     | utils.diagnostics      | FPS=12.2  latency avg=-1782657933002.5ms  p95=-1782657932964.0ms  max=-1782657932889.0ms
+12:42:03 | INFO     | core.calibration       | ArUco markers detected: [0, 1, 2, 3]
+12:42:03 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932997.7ms  p95=-1782657932937.0ms  max=-1782657932646.0ms
+12:42:03 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-2.21114263e-03  2.76146269e-05  1.34943904e+00]
+ [ 3.45936453e-05 -3.59966098e-03  1.91257358e+00]
+ [-1.53532965e-05  7.04403054e-05  1.00000000e+00]]
+12:42:08 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657932990.6ms  p95=-1782657932828.0ms  max=-1782657932641.0ms
+12:42:11 | INFO     | networking.server      | 🔑  S  (kx=0.121 ky=0.554)
+12:42:11 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+12:42:11 | INFO     | networking.server      | 🔑  S  (kx=0.121 ky=0.551)
+12:42:11 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+12:42:11 | INFO     | networking.server      | 🔑  S  (kx=0.121 ky=0.539)
+12:42:11 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+12:42:13 | INFO     | utils.diagnostics      | FPS=7.9  latency avg=-1782657932989.5ms  p95=-1782657932828.0ms  max=-1782657932641.0ms
+12:42:13 | INFO     | networking.server      | 🔑  S  (kx=0.119 ky=0.568)
+12:42:13 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+12:42:14 | INFO     | networking.server      | 🔑  S  (kx=0.121 ky=0.569)
+12:42:14 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+12:42:16 | INFO     | networking.server      | 🔑  J  (kx=0.500 ky=0.497)
+12:42:16 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+12:42:16 | INFO     | networking.server      | 🔑  J  (kx=0.500 ky=0.499)
+12:42:16 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+12:42:16 | INFO     | networking.server      | 🔑  J  (kx=0.498 ky=0.500)
+12:42:16 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+12:42:18 | INFO     | networking.server      | 🔑  E  (kx=0.211 ky=0.343)
+12:42:18 | DEBUG    | core.typer             | type_key: pressed 'e' → 'e'
+12:42:18 | INFO     | utils.diagnostics      | FPS=6.1  latency avg=-1782657932998.8ms  p95=-1782657932950.0ms  max=-1782657932641.0ms
+12:42:24 | INFO     | utils.diagnostics      | FPS=4.4  latency avg=-1782657932998.2ms  p95=-1782657932923.0ms  max=-1782657932641.0ms
+12:42:26 | INFO     | networking.server      | 🔑  D  (kx=0.221 ky=0.500)
+12:42:26 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+12:42:26 | INFO     | networking.server      | 🔑  D  (kx=0.220 ky=0.501)
+12:42:26 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+12:42:26 | INFO     | networking.server      | 🔑  D  (kx=0.220 ky=0.504)
+12:42:26 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+12:42:29 | INFO     | networking.server      | 🔑  O  (kx=0.676 ky=0.414)
+12:42:29 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+12:42:29 | INFO     | utils.diagnostics      | FPS=4.0  latency avg=-1782657932997.7ms  p95=-1782657932923.0ms  max=-1782657932641.0ms
+12:42:31 | INFO     | networking.server      | 🔑  2  (kx=0.123 ky=0.329)
+12:42:31 | DEBUG    | core.typer             | type_key: pressed '2' → '2'
+12:42:34 | INFO     | utils.diagnostics      | FPS=4.2  latency avg=-1782657933005.4ms  p95=-1782657932970.0ms  max=-1782657932889.0ms
+12:42:35 | INFO     | networking.server      | 🔑  CapsLock  (kx=0.011 ky=0.613)
+12:42:35 | DEBUG    | core.typer             | type_key: pressed 'caps_lock' → Key.caps_lock
+12:42:35 | INFO     | networking.server      | 🔑  LShift  (kx=0.014 ky=0.616)
+12:42:35 | DEBUG    | core.typer             | type_key: pressed 'shift' → Key.shift
+12:42:35 | INFO     | networking.server      | 🔑  CapsLock  (kx=0.013 ky=0.612)
+12:42:35 | DEBUG    | core.typer             | type_key: pressed 'caps_lock' → Key.caps_lock
+12:42:37 | INFO     | networking.server      | 🔑  I  (kx=0.611 ky=0.465)
+12:42:37 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+12:42:39 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933007.2ms  p95=-1782657932974.0ms  max=-1782657932923.0ms
+12:42:44 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933007.3ms  p95=-1782657932972.0ms  max=-1782657932941.0ms
+12:42:50 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933006.0ms  p95=-1782657932968.0ms  max=-1782657932907.0ms
+12:42:55 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933007.5ms  p95=-1782657932969.0ms  max=-1782657932907.0ms
+12:43:00 | INFO     | utils.diagnostics      | FPS=9.8  latency avg=-1782657933010.9ms  p95=-1782657932986.0ms  max=-1782657932971.0ms
+12:43:05 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933011.5ms  p95=-1782657932988.0ms  max=-1782657932971.0ms
+12:43:10 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933010.1ms  p95=-1782657932974.0ms  max=-1782657932966.0ms
+12:43:15 | INFO     | utils.diagnostics      | FPS=8.2  latency avg=-1782657933008.4ms  p95=-1782657932974.0ms  max=-1782657932966.0ms
+12:43:20 | INFO     | utils.diagnostics      | FPS=7.6  latency avg=-1782657933005.9ms  p95=-1782657932974.0ms  max=-1782657932912.0ms
+12:43:25 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933005.8ms  p95=-1782657932977.0ms  max=-1782657932912.0ms
+12:43:30 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933008.7ms  p95=-1782657932987.0ms  max=-1782657932956.0ms
+12:43:35 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933009.9ms  p95=-1782657932990.0ms  max=-1782657932966.0ms
+12:43:40 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933010.0ms  p95=-1782657932989.0ms  max=-1782657932967.0ms
+12:43:45 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933009.4ms  p95=-1782657932985.0ms  max=-1782657932915.0ms
+12:43:50 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933007.9ms  p95=-1782657932979.0ms  max=-1782657932915.0ms
+12:43:55 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933009.3ms  p95=-1782657932991.0ms  max=-1782657932968.0ms
+12:44:00 | INFO     | utils.diagnostics      | FPS=11.4  latency avg=-1782657933012.3ms  p95=-1782657932997.0ms  max=-1782657932968.0ms
+12:44:05 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657933012.8ms  p95=-1782657932994.0ms  max=-1782657932943.0ms
+12:44:11 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657933012.7ms  p95=-1782657932997.0ms  max=-1782657932943.0ms
+12:44:16 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933002.8ms  p95=-1782657932914.0ms  max=-1782657932813.0ms
+12:44:21 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933000.2ms  p95=-1782657932914.0ms  max=-1782657932813.0ms
+12:44:26 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657933009.0ms  p95=-1782657932969.0ms  max=-1782657932944.0ms
+12:44:31 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933010.8ms  p95=-1782657932980.0ms  max=-1782657932967.0ms
+12:44:36 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933009.1ms  p95=-1782657932972.0ms  max=-1782657932967.0ms
+12:44:41 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657933007.2ms  p95=-1782657932970.0ms  max=-1782657932935.0ms
+12:44:46 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933006.6ms  p95=-1782657932971.0ms  max=-1782657932935.0ms
+12:44:51 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933006.9ms  p95=-1782657932971.0ms  max=-1782657932935.0ms
+12:44:56 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933007.7ms  p95=-1782657932973.0ms  max=-1782657932952.0ms
+12:45:01 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933006.8ms  p95=-1782657932970.0ms  max=-1782657932952.0ms
+12:45:06 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933008.1ms  p95=-1782657932982.0ms  max=-1782657932953.0ms
+12:45:11 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933010.7ms  p95=-1782657932994.0ms  max=-1782657932979.0ms
+12:45:16 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933010.1ms  p95=-1782657932985.0ms  max=-1782657932969.0ms
+12:45:21 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933007.2ms  p95=-1782657932983.0ms  max=-1782657932967.0ms
+12:45:26 | INFO     | utils.diagnostics      | FPS=9.0  latency avg=-1782657932999.7ms  p95=-1782657932966.0ms  max=-1782657932813.0ms
+12:45:31 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933001.3ms  p95=-1782657932938.0ms  max=-1782657932813.0ms
+12:45:36 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933003.9ms  p95=-1782657932938.0ms  max=-1782657932813.0ms
+12:45:42 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932991.2ms  p95=-1782657932867.0ms  max=-1782657932562.0ms
+12:45:47 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657932976.2ms  p95=-1782657932735.0ms  max=-1782657932562.0ms
+12:45:50 | INFO     | core.calibration       | ArUco markers detected: [3, 1, 2, 0]
+12:45:50 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[ 6.16812835e-05  1.51504653e-03 -5.24916397e-01]
+ [-2.50741860e-03  1.50484980e-04  1.31962895e+00]
+ [-6.80972575e-05 -5.21638272e-06  1.00000000e+00]]
+12:45:52 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657932962.0ms  p95=-1782657932689.0ms  max=-1782657932562.0ms
+12:45:57 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657932990.9ms  p95=-1782657932852.0ms  max=-1782657932689.0ms
+12:46:00 | INFO     | core.calibration       | ArUco markers detected: [3, 1, 2, 0]
+12:46:00 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[ 7.76847944e-05  1.48895856e-03 -5.21332945e-01]
+ [-2.45405501e-03  1.62720687e-04  1.35344871e+00]
+ [-4.54185795e-05 -3.20354870e-06  1.00000000e+00]]
+12:46:02 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933002.8ms  p95=-1782657932936.0ms  max=-1782657932751.0ms
+12:46:07 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933000.7ms  p95=-1782657932936.0ms  max=-1782657932751.0ms
+12:46:12 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933009.5ms  p95=-1782657932982.0ms  max=-1782657932903.0ms
+12:46:17 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933009.4ms  p95=-1782657932982.0ms  max=-1782657932903.0ms
+12:46:22 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933009.6ms  p95=-1782657932982.0ms  max=-1782657932941.0ms
+12:46:27 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933004.0ms  p95=-1782657932961.0ms  max=-1782657932803.0ms
+12:46:32 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933004.2ms  p95=-1782657932951.0ms  max=-1782657932803.0ms
+12:46:38 | INFO     | utils.diagnostics      | FPS=8.7  latency avg=-1782657932994.9ms  p95=-1782657932923.0ms  max=-1782657932070.0ms
+12:46:43 | INFO     | utils.diagnostics      | FPS=11.7  latency avg=-1782657932941.0ms  p95=-1782657932523.0ms  max=-1782657932070.0ms
+12:46:48 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932942.0ms  p95=-1782657932523.0ms  max=-1782657932070.0ms
+12:46:50 | INFO     | core.calibration       | ArUco markers detected: [3, 1, 2, 0]
+12:46:50 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[ 7.20178146e-05  1.43188361e-03 -3.57230601e-01]
+ [-2.34842102e-03  1.25547224e-04  1.32559445e+00]
+ [-1.58542388e-05 -1.11133479e-05  1.00000000e+00]]
+12:46:53 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657932997.1ms  p95=-1782657932944.0ms  max=-1782657932707.0ms
+12:46:58 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657932997.6ms  p95=-1782657932947.0ms  max=-1782657932707.0ms
+12:47:25 | INFO     | utils.diagnostics      | FPS=1.9  latency avg=-1782657932999.5ms  p95=-1782657932953.0ms  max=-1782657932707.0ms
+12:47:30 | INFO     | utils.diagnostics      | FPS=1.9  latency avg=-1782657933009.1ms  p95=-1782657932973.0ms  max=-1782657932945.0ms
+12:47:37 | INFO     | utils.diagnostics      | FPS=6.3  latency avg=-1782657933010.2ms  p95=-1782657932974.0ms  max=-1782657932945.0ms
+12:47:42 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933009.8ms  p95=-1782657932969.0ms  max=-1782657932945.0ms
+12:47:48 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933007.6ms  p95=-1782657932966.0ms  max=-1782657932882.0ms
+12:47:53 | INFO     | utils.diagnostics      | FPS=4.9  latency avg=-1782657933003.7ms  p95=-1782657932955.0ms  max=-1782657932882.0ms
+12:47:58 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933000.4ms  p95=-1782657932951.0ms  max=-1782657932882.0ms
+12:48:03 | INFO     | utils.diagnostics      | FPS=9.3  latency avg=-1782657933002.4ms  p95=-1782657932951.0ms  max=-1782657932882.0ms
+12:48:03 | INFO     | networking.server      | WS client disconnected
+12:48:03 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+12:48:36 | INFO     | networking.server      | WS client disconnected
+12:48:36 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+13:04:45 | INFO     | main                   | Paper Keyboard starting …
+13:04:58 | INFO     | core.typer             | pynput keyboard controller ready
+13:05:06 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+13:05:06 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+13:05:07 | DEBUG    | asyncio                | Using proactor: IocpProactor
+13:05:08 | INFO     | networking.server      | WS client connected  (total=1)
+13:05:23 | INFO     | networking.server      | WS client connected  (total=2)
+13:05:23 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657933174.0ms  p95=-1782657933174.0ms  max=-1782657933174.0ms
+13:05:28 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657933159.9ms  p95=-1782657933122.0ms  max=-1782657933019.0ms
+13:05:33 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933160.8ms  p95=-1782657933123.0ms  max=-1782657932995.0ms
+13:05:38 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933162.6ms  p95=-1782657933133.0ms  max=-1782657932995.0ms
+13:05:43 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933163.3ms  p95=-1782657933123.0ms  max=-1782657933038.0ms
+13:05:48 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933163.1ms  p95=-1782657933129.0ms  max=-1782657933038.0ms
+13:05:53 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933167.2ms  p95=-1782657933136.0ms  max=-1782657933118.0ms
+13:05:59 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657933163.6ms  p95=-1782657933128.0ms  max=-1782657933043.0ms
+13:06:04 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933163.5ms  p95=-1782657933133.0ms  max=-1782657933043.0ms
+13:06:07 | INFO     | core.calibration       | ArUco markers detected: [1, 3, 0, 2]
+13:06:07 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-5.36910217e-05  1.42029531e-03 -3.44657769e-01]
+ [-2.33815728e-03 -1.19706763e-04  1.47506958e+00]
+ [ 1.42065482e-05 -4.48627789e-05  1.00000000e+00]]
+13:06:09 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933161.4ms  p95=-1782657933130.0ms  max=-1782657932941.0ms
+13:06:14 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657933164.6ms  p95=-1782657933136.0ms  max=-1782657932941.0ms
+13:06:22 | INFO     | utils.diagnostics      | FPS=5.2  latency avg=-1782657933164.7ms  p95=-1782657933132.0ms  max=-1782657932941.0ms
+13:06:35 | INFO     | utils.diagnostics      | FPS=2.4  latency avg=-1782657933164.9ms  p95=-1782657933132.0ms  max=-1782657932941.0ms
+13:06:40 | INFO     | utils.diagnostics      | FPS=2.4  latency avg=-1782657933163.1ms  p95=-1782657933120.0ms  max=-1782657932919.0ms
+13:06:50 | INFO     | networking.server      | WS client disconnected
+13:06:50 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+13:06:50 | INFO     | networking.server      | WS client disconnected
+13:06:50 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+13:07:03 | INFO     | main                   | Paper Keyboard starting …
+13:07:08 | INFO     | core.typer             | pynput keyboard controller ready
+13:07:09 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+13:07:09 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+13:07:10 | DEBUG    | asyncio                | Using proactor: IocpProactor
+13:07:11 | INFO     | networking.server      | WS client connected  (total=1)
+13:07:12 | INFO     | networking.server      | WS client connected  (total=2)
+13:07:14 | INFO     | utils.diagnostics      | FPS=9.6  latency avg=-1782657933077.9ms  p95=-1782657932953.0ms  max=-1782657932953.0ms
+13:07:19 | INFO     | utils.diagnostics      | FPS=8.7  latency avg=-1782657933140.7ms  p95=-1782657933000.0ms  max=-1782657932953.0ms
+13:07:25 | INFO     | utils.diagnostics      | FPS=7.9  latency avg=-1782657933152.3ms  p95=-1782657933065.0ms  max=-1782657932953.0ms
+13:07:30 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933165.2ms  p95=-1782657933135.0ms  max=-1782657933102.0ms
+13:07:35 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657933141.8ms  p95=-1782657932925.0ms  max=-1782657932719.0ms
+13:07:35 | INFO     | core.calibration       | ArUco markers detected: [1, 0, 3, 2]
+13:07:35 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-2.29074133e-03  2.16776249e-04  1.26519634e+00]
+ [-2.45629902e-04 -3.74484933e-03  2.42289638e+00]
+ [-4.21017222e-06  1.13593435e-04  1.00000000e+00]]
+13:07:40 | INFO     | utils.diagnostics      | FPS=8.1  latency avg=-1782657933138.5ms  p95=-1782657932925.0ms  max=-1782657932719.0ms
+13:07:40 | INFO     | networking.server      | 🔑  S  (kx=0.165 ky=0.493)
+13:07:40 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+13:07:40 | INFO     | networking.server      | 🔑  S  (kx=0.167 ky=0.493)
+13:07:40 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+13:07:41 | INFO     | networking.server      | 🔑  S  (kx=0.167 ky=0.491)
+13:07:41 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+13:07:41 | INFO     | networking.server      | 🔑  S  (kx=0.168 ky=0.490)
+13:07:41 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+13:07:41 | INFO     | networking.server      | 🔑  S  (kx=0.166 ky=0.492)
+13:07:41 | DEBUG    | core.typer             | type_key: pressed 's' → 's'
+13:07:43 | INFO     | networking.server      | 🔑  I  (kx=0.627 ky=0.465)
+13:07:43 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:07:45 | INFO     | utils.diagnostics      | FPS=6.6  latency avg=-1782657933138.7ms  p95=-1782657932925.0ms  max=-1782657932719.0ms
+13:07:45 | INFO     | networking.server      | 🔑  R  (kx=0.305 ky=0.337)
+13:07:45 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:07:46 | INFO     | networking.server      | 🔑  R  (kx=0.299 ky=0.339)
+13:07:46 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:07:46 | INFO     | networking.server      | 🔑  R  (kx=0.300 ky=0.336)
+13:07:46 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:07:46 | INFO     | networking.server      | 🔑  5  (kx=0.300 ky=0.332)
+13:07:46 | DEBUG    | core.typer             | type_key: pressed '5' → '5'
+13:07:47 | INFO     | networking.server      | 🔑  K  (kx=0.611 ky=0.593)
+13:07:47 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:07:48 | INFO     | networking.server      | 🔑  K  (kx=0.612 ky=0.590)
+13:07:48 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:07:48 | INFO     | networking.server      | 🔑  K  (kx=0.617 ky=0.586)
+13:07:48 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:07:49 | INFO     | networking.server      | 🔑  F  (kx=0.282 ky=0.578)
+13:07:49 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:07:50 | INFO     | utils.diagnostics      | FPS=6.8  latency avg=-1782657933159.3ms  p95=-1782657933079.0ms  max=-1782657932969.0ms
+13:07:55 | INFO     | utils.diagnostics      | FPS=7.8  latency avg=-1782657933163.6ms  p95=-1782657933089.0ms  max=-1782657933041.0ms
+13:07:58 | INFO     | networking.server      | 🔑  D  (kx=0.258 ky=0.491)
+13:07:58 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:07:58 | INFO     | networking.server      | 🔑  D  (kx=0.259 ky=0.499)
+13:07:59 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:08:00 | INFO     | utils.diagnostics      | FPS=8.9  latency avg=-1782657933164.0ms  p95=-1782657933127.0ms  max=-1782657933065.0ms
+13:08:00 | INFO     | networking.server      | 🔑  C  (kx=0.247 ky=0.694)
+13:08:00 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:08:01 | INFO     | networking.server      | 🔑  C  (kx=0.249 ky=0.709)
+13:08:01 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:08:01 | INFO     | networking.server      | 🔑  C  (kx=0.247 ky=0.711)
+13:08:01 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:08:01 | INFO     | networking.server      | 🔑  K  (kx=0.591 ky=0.521)
+13:08:02 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:08:02 | INFO     | networking.server      | 🔑  D  (kx=0.199 ky=0.521)
+13:08:03 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:08:03 | INFO     | networking.server      | 🔑  D  (kx=0.200 ky=0.515)
+13:08:03 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:08:04 | INFO     | networking.server      | 🔑  ;  (kx=0.743 ky=0.488)
+13:08:04 | DEBUG    | core.typer             | type_key: pressed ';' → ';'
+13:08:05 | INFO     | networking.server      | 🔑  R  (kx=0.283 ky=0.455)
+13:08:05 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:08:05 | INFO     | utils.diagnostics      | FPS=6.9  latency avg=-1782657933132.8ms  p95=-1782657932858.0ms  max=-1782657932618.0ms
+13:08:06 | INFO     | networking.server      | 🔑  G  (kx=0.355 ky=0.493)
+13:08:07 | DEBUG    | core.typer             | type_key: pressed 'g' → 'g'
+13:08:07 | INFO     | networking.server      | 🔑  G  (kx=0.355 ky=0.497)
+13:08:07 | DEBUG    | core.typer             | type_key: pressed 'g' → 'g'
+13:08:07 | INFO     | networking.server      | 🔑  O  (kx=0.641 ky=0.433)
+13:08:07 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+13:08:10 | INFO     | utils.diagnostics      | FPS=7.6  latency avg=-1782657933120.9ms  p95=-1782657932858.0ms  max=-1782657932618.0ms
+13:08:15 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657933127.2ms  p95=-1782657932926.0ms  max=-1782657932618.0ms
+13:08:20 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933141.5ms  p95=-1782657933021.0ms  max=-1782657932858.0ms
+13:08:25 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657933149.1ms  p95=-1782657933058.0ms  max=-1782657932858.0ms
+13:08:30 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657933153.8ms  p95=-1782657933087.0ms  max=-1782657932858.0ms
+13:08:35 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933163.2ms  p95=-1782657933129.0ms  max=-1782657933058.0ms
+13:08:40 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657933164.0ms  p95=-1782657933129.0ms  max=-1782657933058.0ms
+13:08:45 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933161.0ms  p95=-1782657933101.0ms  max=-1782657933038.0ms
+13:08:50 | INFO     | utils.diagnostics      | FPS=9.6  latency avg=-1782657933162.7ms  p95=-1782657933101.0ms  max=-1782657933038.0ms
+13:08:55 | INFO     | utils.diagnostics      | FPS=9.1  latency avg=-1782657933169.9ms  p95=-1782657933144.0ms  max=-1782657933061.0ms
+13:08:57 | INFO     | networking.server      | 🔑  6  (kx=0.435 ky=0.196)
+13:08:57 | DEBUG    | core.typer             | type_key: pressed '6' → '6'
+13:08:58 | INFO     | core.calibration       | ArUco markers detected: [1, 0, 3, 2]
+13:08:58 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-2.31461132e-03  1.61196146e-04  1.34018062e+00]
+ [-1.45286496e-04 -3.73167369e-03  2.79692127e+00]
+ [-9.60659581e-06  1.20363467e-04  1.00000000e+00]]
+13:09:00 | INFO     | utils.diagnostics      | FPS=7.2  latency avg=-1782657933167.9ms  p95=-1782657933141.0ms  max=-1782657933061.0ms
+13:09:00 | INFO     | networking.server      | 🔑  D  (kx=0.201 ky=0.503)
+13:09:00 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:09:01 | INFO     | networking.server      | 🔑  D  (kx=0.198 ky=0.507)
+13:09:01 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:09:02 | INFO     | networking.server      | 🔑  D  (kx=0.193 ky=0.511)
+13:09:02 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:09:06 | INFO     | utils.diagnostics      | FPS=8.0  latency avg=-1782657933168.1ms  p95=-1782657933141.0ms  max=-1782657933061.0ms
+13:09:11 | INFO     | utils.diagnostics      | FPS=8.8  latency avg=-1782657933170.4ms  p95=-1782657933152.0ms  max=-1782657933071.0ms
+13:09:16 | INFO     | utils.diagnostics      | FPS=7.1  latency avg=-1782657933170.3ms  p95=-1782657933150.0ms  max=-1782657933071.0ms
+13:09:16 | INFO     | networking.server      | 🔑  E  (kx=0.235 ky=0.388)
+13:09:16 | DEBUG    | core.typer             | type_key: pressed 'e' → 'e'
+13:09:21 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933169.6ms  p95=-1782657933146.0ms  max=-1782657933071.0ms
+13:09:21 | INFO     | networking.server      | 🔑  CapsLock  (kx=0.027 ky=0.601)
+13:09:21 | DEBUG    | core.typer             | type_key: pressed 'caps_lock' → Key.caps_lock
+13:09:22 | INFO     | networking.server      | 🔑  CapsLock  (kx=0.027 ky=0.613)
+13:09:22 | DEBUG    | core.typer             | type_key: pressed 'caps_lock' → Key.caps_lock
+13:09:22 | INFO     | networking.server      | 🔑  CapsLock  (kx=0.021 ky=0.602)
+13:09:22 | DEBUG    | core.typer             | type_key: pressed 'caps_lock' → Key.caps_lock
+13:09:25 | INFO     | networking.server      | 🔑  B  (kx=0.425 ky=0.644)
+13:09:25 | DEBUG    | core.typer             | type_key: pressed 'b' → 'b'
+13:09:25 | INFO     | networking.server      | 🔑  B  (kx=0.430 ky=0.641)
+13:09:25 | DEBUG    | core.typer             | type_key: pressed 'b' → 'b'
+13:09:26 | INFO     | networking.server      | 🔑  B  (kx=0.432 ky=0.633)
+13:09:26 | DEBUG    | core.typer             | type_key: pressed 'b' → 'b'
+13:09:26 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933169.4ms  p95=-1782657933146.0ms  max=-1782657933071.0ms
+13:09:28 | INFO     | networking.server      | 🔑  G  (kx=0.397 ky=0.501)
+13:09:28 | DEBUG    | core.typer             | type_key: pressed 'g' → 'g'
+13:09:29 | INFO     | networking.server      | 🔑  G  (kx=0.398 ky=0.507)
+13:09:29 | DEBUG    | core.typer             | type_key: pressed 'g' → 'g'
+13:09:30 | INFO     | networking.server      | 🔑  V  (kx=0.367 ky=0.679)
+13:09:30 | DEBUG    | core.typer             | type_key: pressed 'v' → 'v'
+13:09:31 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933166.0ms  p95=-1782657933137.0ms  max=-1782657933049.0ms
+13:09:36 | INFO     | utils.diagnostics      | FPS=6.7  latency avg=-1782657933166.2ms  p95=-1782657933136.0ms  max=-1782657933049.0ms
+13:09:41 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657933162.9ms  p95=-1782657933120.0ms  max=-1782657933049.0ms
+13:10:31 | INFO     | utils.diagnostics      | FPS=1.1  latency avg=-1782657933159.1ms  p95=-1782657933120.0ms  max=-1782657932900.0ms
+13:10:36 | INFO     | utils.diagnostics      | FPS=1.1  latency avg=-1782657933161.2ms  p95=-1782657933120.0ms  max=-1782657932900.0ms
+13:10:41 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933168.1ms  p95=-1782657933135.0ms  max=-1782657932971.0ms
+13:10:46 | INFO     | core.calibration       | ArUco markers detected: [1, 0, 3, 2]
+13:10:46 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-2.30842746e-03  2.12863052e-04  1.28555333e+00]
+ [-2.31395484e-04 -3.76067965e-03  2.67605155e+00]
+ [ 1.68456753e-05  1.17018460e-04  1.00000000e+00]]
+13:10:46 | INFO     | utils.diagnostics      | FPS=7.7  latency avg=-1782657933165.8ms  p95=-1782657933136.0ms  max=-1782657932971.0ms
+13:10:50 | INFO     | networking.server      | 🔑  D  (kx=0.245 ky=0.544)
+13:10:50 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:10:51 | INFO     | networking.server      | 🔑  D  (kx=0.247 ky=0.549)
+13:10:51 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:10:51 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933157.2ms  p95=-1782657933094.0ms  max=-1782657932735.0ms
+13:10:56 | INFO     | utils.diagnostics      | FPS=5.5  latency avg=-1782657933155.3ms  p95=-1782657933094.0ms  max=-1782657932735.0ms
+13:10:58 | INFO     | networking.server      | 🔑  D  (kx=0.230 ky=0.600)
+13:10:58 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:11:01 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933153.0ms  p95=-1782657933094.0ms  max=-1782657932735.0ms
+13:11:03 | INFO     | networking.server      | 🔑  D  (kx=0.265 ky=0.554)
+13:11:03 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:11:03 | INFO     | networking.server      | 🔑  D  (kx=0.264 ky=0.540)
+13:11:03 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:11:07 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933154.1ms  p95=-1782657933094.0ms  max=-1782657932735.0ms
+13:11:08 | INFO     | networking.server      | 🔑  J  (kx=0.543 ky=0.515)
+13:11:08 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:08 | INFO     | networking.server      | 🔑  J  (kx=0.543 ky=0.522)
+13:11:08 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:08 | INFO     | networking.server      | 🔑  J  (kx=0.543 ky=0.527)
+13:11:08 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:09 | INFO     | networking.server      | 🔑  J  (kx=0.546 ky=0.522)
+13:11:09 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:12 | INFO     | utils.diagnostics      | FPS=5.7  latency avg=-1782657933150.9ms  p95=-1782657933060.0ms  max=-1782657932735.0ms
+13:11:17 | INFO     | utils.diagnostics      | FPS=5.5  latency avg=-1782657933156.7ms  p95=-1782657933078.0ms  max=-1782657932950.0ms
+13:11:17 | INFO     | networking.server      | 🔑  N  (kx=0.531 ky=0.671)
+13:11:17 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:18 | INFO     | networking.server      | 🔑  N  (kx=0.522 ky=0.676)
+13:11:18 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:20 | INFO     | networking.server      | 🔑  N  (kx=0.516 ky=0.731)
+13:11:20 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:22 | INFO     | networking.server      | 🔑  J  (kx=0.513 ky=0.593)
+13:11:22 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:22 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933156.1ms  p95=-1782657933069.0ms  max=-1782657932950.0ms
+13:11:22 | INFO     | networking.server      | 🔑  J  (kx=0.515 ky=0.596)
+13:11:22 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:25 | INFO     | networking.server      | 🔑  N  (kx=0.477 ky=0.723)
+13:11:25 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:25 | INFO     | networking.server      | 🔑  N  (kx=0.474 ky=0.731)
+13:11:25 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:26 | INFO     | networking.server      | 🔑  N  (kx=0.476 ky=0.725)
+13:11:26 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:27 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933155.8ms  p95=-1782657933069.0ms  max=-1782657932950.0ms
+13:11:32 | INFO     | utils.diagnostics      | FPS=7.2  latency avg=-1782657933163.2ms  p95=-1782657933114.0ms  max=-1782657933056.0ms
+13:11:33 | INFO     | networking.server      | 🔑  N  (kx=0.500 ky=0.695)
+13:11:33 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:33 | INFO     | networking.server      | 🔑  N  (kx=0.499 ky=0.700)
+13:11:33 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:34 | INFO     | networking.server      | 🔑  N  (kx=0.499 ky=0.706)
+13:11:34 | DEBUG    | core.typer             | type_key: pressed 'n' → 'n'
+13:11:36 | INFO     | networking.server      | 🔑  J  (kx=0.521 ky=0.581)
+13:11:36 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:36 | INFO     | networking.server      | 🔑  J  (kx=0.524 ky=0.579)
+13:11:36 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:37 | INFO     | utils.diagnostics      | FPS=7.0  latency avg=-1782657933168.5ms  p95=-1782657933137.0ms  max=-1782657933087.0ms
+13:11:38 | INFO     | networking.server      | 🔑  J  (kx=0.525 ky=0.556)
+13:11:38 | DEBUG    | core.typer             | type_key: pressed 'j' → 'j'
+13:11:39 | INFO     | networking.server      | 🔑  I  (kx=0.570 ky=0.422)
+13:11:39 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:11:39 | INFO     | networking.server      | 🔑  I  (kx=0.565 ky=0.443)
+13:11:39 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:11:42 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933169.7ms  p95=-1782657933142.0ms  max=-1782657933106.0ms
+13:11:42 | INFO     | networking.server      | 🔑  =  (kx=0.823 ky=0.261)
+13:11:42 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:43 | INFO     | networking.server      | 🔑  -  (kx=0.821 ky=0.266)
+13:11:43 | DEBUG    | core.typer             | type_key: pressed '-' → '-'
+13:11:43 | INFO     | networking.server      | 🔑  -  (kx=0.820 ky=0.266)
+13:11:43 | DEBUG    | core.typer             | type_key: pressed '-' → '-'
+13:11:47 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933169.0ms  p95=-1782657933138.0ms  max=-1782657933086.0ms
+13:11:52 | INFO     | utils.diagnostics      | FPS=6.3  latency avg=-1782657933168.7ms  p95=-1782657933137.0ms  max=-1782657933077.0ms
+13:11:52 | INFO     | networking.server      | 🔑  =  (kx=0.893 ky=0.239)
+13:11:53 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:53 | INFO     | networking.server      | 🔑  =  (kx=0.888 ky=0.236)
+13:11:53 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:53 | INFO     | networking.server      | 🔑  =  (kx=0.888 ky=0.233)
+13:11:53 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:54 | INFO     | networking.server      | 🔑  =  (kx=0.883 ky=0.238)
+13:11:54 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:54 | INFO     | networking.server      | 🔑  =  (kx=0.890 ky=0.229)
+13:11:54 | DEBUG    | core.typer             | type_key: pressed '=' → '='
+13:11:58 | INFO     | utils.diagnostics      | FPS=4.6  latency avg=-1782657933168.8ms  p95=-1782657933137.0ms  max=-1782657933077.0ms
+13:12:02 | INFO     | networking.server      | 🔑  Backspace  (kx=0.927 ky=0.204)
+13:12:02 | DEBUG    | core.typer             | type_key: pressed 'backspace' → Key.backspace
+13:12:03 | INFO     | utils.diagnostics      | FPS=3.8  latency avg=-1782657933168.8ms  p95=-1782657933137.0ms  max=-1782657933077.0ms
+13:12:08 | INFO     | utils.diagnostics      | FPS=3.9  latency avg=-1782657933169.7ms  p95=-1782657933140.0ms  max=-1782657933077.0ms
+13:12:13 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657933169.4ms  p95=-1782657933141.0ms  max=-1782657933077.0ms
+13:12:18 | INFO     | utils.diagnostics      | FPS=9.0  latency avg=-1782657933169.3ms  p95=-1782657933146.0ms  max=-1782657933052.0ms
+13:12:19 | INFO     | networking.server      | 🔑  F  (kx=0.318 ky=0.518)
+13:12:19 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:12:19 | INFO     | networking.server      | 🔑  F  (kx=0.317 ky=0.516)
+13:12:19 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:12:22 | INFO     | networking.server      | 🔑  H  (kx=0.479 ky=0.496)
+13:12:22 | DEBUG    | core.typer             | type_key: pressed 'h' → 'h'
+13:12:23 | INFO     | networking.server      | 🔑  H  (kx=0.474 ky=0.498)
+13:12:23 | DEBUG    | core.typer             | type_key: pressed 'h' → 'h'
+13:12:23 | INFO     | utils.diagnostics      | FPS=6.7  latency avg=-1782657933166.7ms  p95=-1782657933133.0ms  max=-1782657933052.0ms
+13:12:25 | INFO     | networking.server      | 🔑  O  (kx=0.640 ky=0.431)
+13:12:25 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+13:12:25 | INFO     | networking.server      | 🔑  O  (kx=0.638 ky=0.433)
+13:12:25 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+13:12:26 | INFO     | networking.server      | 🔑  O  (kx=0.637 ky=0.434)
+13:12:26 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+13:12:28 | INFO     | utils.diagnostics      | FPS=5.7  latency avg=-1782657933163.6ms  p95=-1782657933135.0ms  max=-1782657932884.0ms
+13:12:29 | INFO     | networking.server      | 🔑  LShift  (kx=0.039 ky=0.621)
+13:12:29 | DEBUG    | core.typer             | type_key: pressed 'shift' → Key.shift
+13:12:30 | INFO     | networking.server      | 🔑  LShift  (kx=0.039 ky=0.623)
+13:12:30 | DEBUG    | core.typer             | type_key: pressed 'shift' → Key.shift
+13:12:30 | INFO     | networking.server      | 🔑  LShift  (kx=0.042 ky=0.622)
+13:12:30 | DEBUG    | core.typer             | type_key: pressed 'shift' → Key.shift
+13:12:32 | INFO     | networking.server      | 🔑  9  (kx=0.644 ky=0.329)
+13:12:32 | DEBUG    | core.typer             | type_key: pressed '9' → '9'
+13:12:33 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933158.7ms  p95=-1782657933081.0ms  max=-1782657932884.0ms
+13:12:33 | INFO     | networking.server      | 🔑  9  (kx=0.638 ky=0.323)
+13:12:33 | DEBUG    | core.typer             | type_key: pressed '9' → '9'
+13:12:37 | INFO     | networking.server      | 🔑  R  (kx=0.318 ky=0.385)
+13:12:37 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:12:38 | INFO     | networking.server      | 🔑  R  (kx=0.315 ky=0.390)
+13:12:38 | DEBUG    | core.typer             | type_key: pressed 'r' → 'r'
+13:12:38 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933151.5ms  p95=-1782657933060.0ms  max=-1782657932553.0ms
+13:12:43 | INFO     | utils.diagnostics      | FPS=5.1  latency avg=-1782657933150.1ms  p95=-1782657933060.0ms  max=-1782657932553.0ms
+13:12:44 | INFO     | networking.server      | 🔑  F  (kx=0.273 ky=0.561)
+13:12:44 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:12:45 | INFO     | networking.server      | 🔑  F  (kx=0.275 ky=0.568)
+13:12:45 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:12:45 | INFO     | networking.server      | 🔑  F  (kx=0.277 ky=0.570)
+13:12:46 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+13:12:49 | INFO     | utils.diagnostics      | FPS=4.8  latency avg=-1782657933148.7ms  p95=-1782657933060.0ms  max=-1782657932553.0ms
+13:12:53 | INFO     | networking.server      | 🔑  D  (kx=0.251 ky=0.599)
+13:12:53 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:12:54 | INFO     | utils.diagnostics      | FPS=6.6  latency avg=-1782657933111.1ms  p95=-1782657932775.0ms  max=-1782657932401.0ms
+13:12:54 | INFO     | networking.server      | 🔑  D  (kx=0.254 ky=0.606)
+13:12:54 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:12:54 | INFO     | networking.server      | 🔑  D  (kx=0.252 ky=0.608)
+13:12:54 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:12:57 | INFO     | networking.server      | 🔑  X  (kx=0.225 ky=0.622)
+13:12:57 | DEBUG    | core.typer             | type_key: pressed 'x' → 'x'
+13:12:57 | INFO     | networking.server      | 🔑  X  (kx=0.221 ky=0.624)
+13:12:57 | DEBUG    | core.typer             | type_key: pressed 'x' → 'x'
+13:12:59 | INFO     | utils.diagnostics      | FPS=6.4  latency avg=-1782657933112.9ms  p95=-1782657932804.0ms  max=-1782657932401.0ms
+13:13:02 | INFO     | networking.server      | 🔑  C  (kx=0.254 ky=0.645)
+13:13:02 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:13:04 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933113.5ms  p95=-1782657932804.0ms  max=-1782657932401.0ms
+13:13:09 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657933144.1ms  p95=-1782657932976.0ms  max=-1782657932775.0ms
+13:13:09 | INFO     | networking.server      | 🔑  C  (kx=0.279 ky=0.671)
+13:13:09 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:13:10 | INFO     | networking.server      | 🔑  C  (kx=0.279 ky=0.685)
+13:13:10 | DEBUG    | core.typer             | type_key: pressed 'c' → 'c'
+13:13:13 | INFO     | networking.server      | 🔑  I  (kx=0.572 ky=0.361)
+13:13:13 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:13:13 | INFO     | networking.server      | 🔑  I  (kx=0.575 ky=0.369)
+13:13:13 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:13:14 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933154.7ms  p95=-1782657933065.0ms  max=-1782657932804.0ms
+13:13:17 | INFO     | networking.server      | 🔑  O  (kx=0.636 ky=0.344)
+13:13:17 | DEBUG    | core.typer             | type_key: pressed 'o' → 'o'
+13:13:19 | INFO     | utils.diagnostics      | FPS=5.6  latency avg=-1782657933159.0ms  p95=-1782657933078.0ms  max=-1782657932961.0ms
+13:13:20 | INFO     | networking.server      | 🔑  A  (kx=0.047 ky=0.551)
+13:13:20 | DEBUG    | core.typer             | type_key: pressed 'a' → 'a'
+13:13:21 | INFO     | networking.server      | 🔑  A  (kx=0.050 ky=0.572)
+13:13:21 | DEBUG    | core.typer             | type_key: pressed 'a' → 'a'
+13:13:24 | INFO     | networking.server      | 🔑  K  (kx=0.593 ky=0.518)
+13:13:24 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:13:24 | INFO     | utils.diagnostics      | FPS=5.0  latency avg=-1782657933156.3ms  p95=-1782657933065.0ms  max=-1782657932954.0ms
+13:13:25 | INFO     | networking.server      | 🔑  K  (kx=0.592 ky=0.524)
+13:13:25 | DEBUG    | core.typer             | type_key: pressed 'k' → 'k'
+13:13:27 | INFO     | networking.server      | 🔑  Space  (kx=0.394 ky=0.797)
+13:13:27 | DEBUG    | core.typer             | type_key: pressed 'space' → Key.space
+13:13:28 | INFO     | networking.server      | 🔑  Space  (kx=0.393 ky=0.794)
+13:13:28 | DEBUG    | core.typer             | type_key: pressed 'space' → Key.space
+13:13:28 | INFO     | networking.server      | 🔑  Space  (kx=0.396 ky=0.793)
+13:13:28 | DEBUG    | core.typer             | type_key: pressed 'space' → Key.space
+13:13:35 | INFO     | utils.diagnostics      | FPS=3.1  latency avg=-1782657933154.5ms  p95=-1782657933078.0ms  max=-1782657932954.0ms
+13:13:41 | INFO     | utils.diagnostics      | FPS=2.5  latency avg=-1782657933155.5ms  p95=-1782657933080.0ms  max=-1782657932954.0ms
+13:13:42 | INFO     | networking.server      | 🔑  D  (kx=0.196 ky=0.552)
+13:13:42 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:42 | INFO     | networking.server      | 🔑  D  (kx=0.199 ky=0.549)
+13:13:42 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:43 | INFO     | networking.server      | 🔑  D  (kx=0.199 ky=0.546)
+13:13:43 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:43 | INFO     | networking.server      | 🔑  D  (kx=0.199 ky=0.550)
+13:13:43 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:45 | INFO     | networking.server      | 🔑  D  (kx=0.201 ky=0.557)
+13:13:45 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:45 | INFO     | networking.server      | 🔑  D  (kx=0.203 ky=0.554)
+13:13:45 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:45 | INFO     | networking.server      | 🔑  D  (kx=0.204 ky=0.537)
+13:13:45 | DEBUG    | core.typer             | type_key: pressed 'd' → 'd'
+13:13:46 | INFO     | utils.diagnostics      | FPS=2.6  latency avg=-1782657933157.7ms  p95=-1782657933098.0ms  max=-1782657932954.0ms
+13:13:47 | INFO     | networking.server      | 🔑  I  (kx=0.568 ky=0.416)
+13:13:47 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:13:48 | INFO     | networking.server      | 🔑  I  (kx=0.568 ky=0.417)
+13:13:48 | DEBUG    | core.typer             | type_key: pressed 'i' → 'i'
+13:13:51 | INFO     | utils.diagnostics      | FPS=6.4  latency avg=-1782657933159.7ms  p95=-1782657933121.0ms  max=-1782657932954.0ms
+13:13:53 | INFO     | networking.server      | WS client disconnected
+13:13:53 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+13:13:53 | INFO     | networking.server      | WS client disconnected
+13:13:53 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+14:00:25 | INFO     | main                   | Paper Keyboard starting …
+14:00:33 | INFO     | core.typer             | pynput keyboard controller ready
+14:00:35 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+14:00:35 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+14:00:35 | DEBUG    | asyncio                | Using proactor: IocpProactor
+14:00:38 | INFO     | networking.server      | WS client connected  (total=1)
+14:00:43 | INFO     | networking.server      | WS client connected  (total=2)
+14:00:44 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657933015.0ms  p95=-1782657933015.0ms  max=-1782657933015.0ms
+14:00:49 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657933008.9ms  p95=-1782657932987.0ms  max=-1782657932984.0ms
+14:00:54 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932998.6ms  p95=-1782657932932.0ms  max=-1782657932890.0ms
+14:00:58 | INFO     | core.calibration       | ArUco markers detected: [1, 0, 3, 2]
+14:00:58 | INFO     | core.calibration       | Calibration OK — frame 720x1280, H=
+[[-2.33587701e-03  2.35330893e-04  1.30814342e+00]
+ [-2.54866748e-04 -3.82091214e-03  2.34682659e+00]
+ [-1.40259052e-05  1.28431671e-04  1.00000000e+00]]
+14:00:59 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933000.1ms  p95=-1782657932940.0ms  max=-1782657932890.0ms
+14:01:04 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657933005.8ms  p95=-1782657932974.0ms  max=-1782657932890.0ms
+14:01:09 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933007.6ms  p95=-1782657932979.0ms  max=-1782657932913.0ms
+14:01:14 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657932986.7ms  p95=-1782657932871.0ms  max=-1782657932369.0ms
+14:01:19 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932983.2ms  p95=-1782657932859.0ms  max=-1782657932369.0ms
+14:01:24 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933000.9ms  p95=-1782657932957.0ms  max=-1782657932859.0ms
+14:01:30 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933002.9ms  p95=-1782657932970.0ms  max=-1782657932860.0ms
+14:01:35 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933004.6ms  p95=-1782657932974.0ms  max=-1782657932899.0ms
+14:01:40 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933006.2ms  p95=-1782657932978.0ms  max=-1782657932877.0ms
+14:01:45 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657933001.7ms  p95=-1782657932952.0ms  max=-1782657932730.0ms
+14:01:50 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657933001.6ms  p95=-1782657932942.0ms  max=-1782657932730.0ms
+14:01:55 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933002.8ms  p95=-1782657932942.0ms  max=-1782657932837.0ms
+14:02:00 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657932996.2ms  p95=-1782657932892.0ms  max=-1782657932783.0ms
+14:02:05 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657932997.4ms  p95=-1782657932907.0ms  max=-1782657932783.0ms
+14:02:10 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933004.4ms  p95=-1782657932960.0ms  max=-1782657932880.0ms
+14:02:15 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933006.9ms  p95=-1782657932983.0ms  max=-1782657932907.0ms
+14:02:17 | INFO     | networking.server      | 🔑  Z  (kx=0.124 ky=0.635)
+14:02:17 | DEBUG    | core.typer             | type_key: pressed 'z' → 'z'
+14:02:20 | INFO     | networking.server      | 🔑  A  (kx=0.097 ky=0.508)
+14:02:20 | DEBUG    | core.typer             | type_key: pressed 'a' → 'a'
+14:02:20 | INFO     | utils.diagnostics      | FPS=7.5  latency avg=-1782657933005.3ms  p95=-1782657932975.0ms  max=-1782657932879.0ms
+14:02:25 | INFO     | utils.diagnostics      | FPS=6.2  latency avg=-1782657933003.6ms  p95=-1782657932971.0ms  max=-1782657932879.0ms
+14:02:27 | INFO     | networking.server      | 🔑  V  (kx=0.344 ky=0.659)
+14:02:27 | DEBUG    | core.typer             | type_key: pressed 'v' → 'v'
+14:02:28 | INFO     | networking.server      | 🔑  V  (kx=0.346 ky=0.660)
+14:02:28 | DEBUG    | core.typer             | type_key: pressed 'v' → 'v'
+14:02:30 | INFO     | utils.diagnostics      | FPS=6.5  latency avg=-1782657933003.7ms  p95=-1782657932971.0ms  max=-1782657932879.0ms
+14:02:33 | INFO     | networking.server      | 🔑  E  (kx=0.201 ky=0.435)
+14:02:33 | DEBUG    | core.typer             | type_key: pressed 'e' → 'e'
+14:02:35 | INFO     | networking.server      | 🔑  Y  (kx=0.417 ky=0.446)
+14:02:35 | DEBUG    | core.typer             | type_key: pressed 'y' → 'y'
+14:02:35 | INFO     | networking.server      | 🔑  Y  (kx=0.412 ky=0.449)
+14:02:35 | DEBUG    | core.typer             | type_key: pressed 'y' → 'y'
+14:02:35 | INFO     | utils.diagnostics      | FPS=6.2  latency avg=-1782657933003.8ms  p95=-1782657932971.0ms  max=-1782657932879.0ms
+14:02:37 | INFO     | networking.server      | 🔑  LShift  (kx=0.019 ky=0.617)
+14:02:37 | DEBUG    | core.typer             | type_key: pressed 'shift' → Key.shift
+14:02:39 | INFO     | networking.server      | 🔑  H  (kx=0.457 ky=0.482)
+14:02:39 | DEBUG    | core.typer             | type_key: pressed 'h' → 'h'
+14:02:41 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657933002.2ms  p95=-1782657932971.0ms  max=-1782657932697.0ms
+14:02:46 | INFO     | utils.diagnostics      | FPS=6.1  latency avg=-1782657933003.3ms  p95=-1782657932972.0ms  max=-1782657932697.0ms
+14:02:46 | INFO     | networking.server      | 🔑  F  (kx=0.343 ky=0.520)
+14:02:46 | DEBUG    | core.typer             | type_key: pressed 'f' → 'f'
+14:02:48 | INFO     | networking.server      | 🔑  Space  (kx=0.347 ky=0.813)
+14:02:48 | DEBUG    | core.typer             | type_key: pressed 'space' → Key.space
+14:02:48 | INFO     | networking.server      | 🔑  Space  (kx=0.348 ky=0.830)
+14:02:48 | DEBUG    | core.typer             | type_key: pressed 'space' → Key.space
+14:02:50 | INFO     | networking.server      | 🔑  A  (kx=0.060 ky=0.526)
+14:02:50 | DEBUG    | core.typer             | type_key: pressed 'a' → 'a'
+14:02:51 | INFO     | utils.diagnostics      | FPS=6.5  latency avg=-1782657933004.4ms  p95=-1782657932973.0ms  max=-1782657932697.0ms
+14:02:56 | INFO     | utils.diagnostics      | FPS=7.0  latency avg=-1782657933006.8ms  p95=-1782657932979.0ms  max=-1782657932846.0ms
+14:03:00 | INFO     | networking.server      | 🔑  Ctrl  (kx=-0.015 ky=0.892)
+14:03:00 | DEBUG    | core.typer             | type_key: pressed 'ctrl' → Key.ctrl
+14:03:00 | INFO     | networking.server      | 🔑  Ctrl  (kx=-0.017 ky=0.890)
+14:03:00 | DEBUG    | core.typer             | type_key: pressed 'ctrl' → Key.ctrl
+14:03:03 | INFO     | utils.diagnostics      | FPS=5.8  latency avg=-1782657933007.6ms  p95=-1782657932979.0ms  max=-1782657932931.0ms
+14:03:08 | INFO     | utils.diagnostics      | FPS=6.9  latency avg=-1782657933006.2ms  p95=-1782657932968.0ms  max=-1782657932931.0ms
+14:03:13 | INFO     | utils.diagnostics      | FPS=8.1  latency avg=-1782657933005.5ms  p95=-1782657932966.0ms  max=-1782657932931.0ms
+14:03:18 | INFO     | utils.diagnostics      | FPS=8.5  latency avg=-1782657933007.3ms  p95=-1782657932981.0ms  max=-1782657932931.0ms
+14:03:24 | INFO     | utils.diagnostics      | FPS=8.8  latency avg=-1782657932991.8ms  p95=-1782657932931.0ms  max=-1782657932086.0ms
+14:03:29 | INFO     | utils.diagnostics      | FPS=11.6  latency avg=-1782657932946.8ms  p95=-1782657932530.0ms  max=-1782657932086.0ms
+14:03:34 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657932950.8ms  p95=-1782657932530.0ms  max=-1782657932086.0ms
+14:03:39 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657932998.0ms  p95=-1782657932890.0ms  max=-1782657932810.0ms
+14:03:44 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657932995.2ms  p95=-1782657932890.0ms  max=-1782657932810.0ms
+14:03:49 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657933000.5ms  p95=-1782657932947.0ms  max=-1782657932810.0ms
+14:03:54 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933001.8ms  p95=-1782657932949.0ms  max=-1782657932902.0ms
+14:03:59 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657932998.7ms  p95=-1782657932939.0ms  max=-1782657932809.0ms
+14:04:04 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657932999.8ms  p95=-1782657932951.0ms  max=-1782657932809.0ms
+14:04:10 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657933007.6ms  p95=-1782657932975.0ms  max=-1782657932910.0ms
+14:04:12 | INFO     | networking.server      | WS client disconnected
+14:04:12 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+14:11:01 | INFO     | networking.server      | WS client disconnected
+14:11:01 | INFO     | networking.server      | WS cleanup done  (remaining=0)

@@ -1,0 +1,342 @@
+21:16:23 | INFO     | main                   | Paper Keyboard starting …
+21:16:30 | INFO     | core.typer             | pynput keyboard controller ready
+21:16:34 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+21:16:34 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+21:16:34 | DEBUG    | asyncio                | Using proactor: IocpProactor
+21:18:08 | INFO     | networking.server      | WS client connected  (total=1)
+21:18:10 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657934808.0ms  p95=-1782657934808.0ms  max=-1782657934808.0ms
+21:18:15 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934799.1ms  p95=-1782657934764.0ms  max=-1782657934678.0ms
+21:18:20 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934801.3ms  p95=-1782657934772.0ms  max=-1782657934678.0ms
+21:18:25 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934802.4ms  p95=-1782657934776.0ms  max=-1782657934753.0ms
+21:18:30 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934802.3ms  p95=-1782657934770.0ms  max=-1782657934744.0ms
+21:18:35 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934802.9ms  p95=-1782657934772.0ms  max=-1782657934744.0ms
+21:18:40 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934803.8ms  p95=-1782657934777.0ms  max=-1782657934756.0ms
+21:18:45 | INFO     | utils.diagnostics      | FPS=8.7  latency avg=-1782657934802.9ms  p95=-1782657934774.0ms  max=-1782657934756.0ms
+21:18:50 | INFO     | utils.diagnostics      | FPS=8.8  latency avg=-1782657934801.6ms  p95=-1782657934765.0ms  max=-1782657934705.0ms
+21:18:55 | INFO     | utils.diagnostics      | FPS=8.6  latency avg=-1782657934796.5ms  p95=-1782657934746.0ms  max=-1782657934558.0ms
+21:19:02 | INFO     | utils.diagnostics      | FPS=5.6  latency avg=-1782657934797.0ms  p95=-1782657934746.0ms  max=-1782657934558.0ms
+21:19:07 | INFO     | utils.diagnostics      | FPS=7.0  latency avg=-1782657934802.1ms  p95=-1782657934770.0ms  max=-1782657934737.0ms
+21:19:12 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934804.7ms  p95=-1782657934777.0ms  max=-1782657934743.0ms
+21:19:17 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934805.9ms  p95=-1782657934783.0ms  max=-1782657934768.0ms
+21:19:22 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934806.0ms  p95=-1782657934786.0ms  max=-1782657934768.0ms
+21:19:27 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934805.3ms  p95=-1782657934781.0ms  max=-1782657934737.0ms
+21:19:32 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934800.7ms  p95=-1782657934768.0ms  max=-1782657934667.0ms
+21:19:37 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934800.3ms  p95=-1782657934760.0ms  max=-1782657934667.0ms
+21:19:42 | INFO     | utils.diagnostics      | FPS=11.2  latency avg=-1782657934803.8ms  p95=-1782657934780.0ms  max=-1782657934696.0ms
+21:19:47 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934805.3ms  p95=-1782657934784.0ms  max=-1782657934747.0ms
+21:19:54 | INFO     | utils.diagnostics      | FPS=6.9  latency avg=-1782657934805.1ms  p95=-1782657934776.0ms  max=-1782657934747.0ms
+21:19:59 | INFO     | utils.diagnostics      | FPS=6.8  latency avg=-1782657934803.4ms  p95=-1782657934776.0ms  max=-1782657934678.0ms
+21:20:04 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934795.8ms  p95=-1782657934719.0ms  max=-1782657934552.0ms
+21:20:09 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934799.1ms  p95=-1782657934738.0ms  max=-1782657934552.0ms
+21:20:10 | INFO     | networking.server      | WS client disconnected
+21:20:10 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+21:20:11 | INFO     | networking.server      | WS client connected  (total=1)
+21:20:14 | INFO     | utils.diagnostics      | FPS=7.5  latency avg=-1782657934798.2ms  p95=-1782657934738.0ms  max=-1782657934552.0ms
+21:20:19 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657934807.2ms  p95=-1782657934793.0ms  max=-1782657934750.0ms
+21:20:23 | INFO     | networking.server      | WS client disconnected
+21:20:23 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+21:20:24 | INFO     | networking.server      | WS client connected  (total=1)
+21:20:25 | INFO     | utils.diagnostics      | FPS=7.1  latency avg=-1782657934807.1ms  p95=-1782657934788.0ms  max=-1782657934750.0ms
+21:20:30 | INFO     | utils.diagnostics      | FPS=7.2  latency avg=-1782657934804.9ms  p95=-1782657934772.0ms  max=-1782657934738.0ms
+21:20:36 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934800.9ms  p95=-1782657934765.0ms  max=-1782657934671.0ms
+21:20:41 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934799.9ms  p95=-1782657934762.0ms  max=-1782657934671.0ms
+21:20:46 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934805.2ms  p95=-1782657934777.0ms  max=-1782657934744.0ms
+21:20:51 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934804.1ms  p95=-1782657934775.0ms  max=-1782657934613.0ms
+21:20:57 | INFO     | utils.diagnostics      | FPS=7.6  latency avg=-1782657934796.2ms  p95=-1782657934765.0ms  max=-1782657934429.0ms
+21:21:02 | INFO     | utils.diagnostics      | FPS=7.6  latency avg=-1782657934795.3ms  p95=-1782657934763.0ms  max=-1782657934429.0ms
+21:21:07 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934806.9ms  p95=-1782657934785.0ms  max=-1782657934763.0ms
+21:21:12 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934807.8ms  p95=-1782657934789.0ms  max=-1782657934763.0ms
+21:21:17 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934802.7ms  p95=-1782657934768.0ms  max=-1782657934664.0ms
+21:21:22 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934801.6ms  p95=-1782657934751.0ms  max=-1782657934664.0ms
+21:21:27 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934802.3ms  p95=-1782657934772.0ms  max=-1782657934664.0ms
+21:21:32 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934783.5ms  p95=-1782657934646.0ms  max=-1782657934547.0ms
+21:21:37 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934773.1ms  p95=-1782657934626.0ms  max=-1782657934547.0ms
+21:21:43 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934784.1ms  p95=-1782657934662.0ms  max=-1782657934580.0ms
+21:21:48 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934805.1ms  p95=-1782657934780.0ms  max=-1782657934753.0ms
+21:21:53 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934793.3ms  p95=-1782657934693.0ms  max=-1782657934406.0ms
+21:21:58 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934792.5ms  p95=-1782657934692.0ms  max=-1782657934406.0ms
+21:22:03 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934800.3ms  p95=-1782657934754.0ms  max=-1782657934596.0ms
+21:22:08 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934807.5ms  p95=-1782657934784.0ms  max=-1782657934773.0ms
+21:22:13 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934805.8ms  p95=-1782657934774.0ms  max=-1782657934755.0ms
+21:22:18 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934802.2ms  p95=-1782657934762.0ms  max=-1782657934662.0ms
+21:22:23 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934803.6ms  p95=-1782657934771.0ms  max=-1782657934662.0ms
+21:22:28 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934808.4ms  p95=-1782657934791.0ms  max=-1782657934771.0ms
+21:22:33 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934808.3ms  p95=-1782657934787.0ms  max=-1782657934770.0ms
+21:22:38 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934796.5ms  p95=-1782657934736.0ms  max=-1782657934327.0ms
+21:22:43 | INFO     | utils.diagnostics      | FPS=11.4  latency avg=-1782657934792.2ms  p95=-1782657934710.0ms  max=-1782657934327.0ms
+21:22:48 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934789.9ms  p95=-1782657934710.0ms  max=-1782657934327.0ms
+21:22:53 | INFO     | utils.diagnostics      | FPS=9.2  latency avg=-1782657934805.4ms  p95=-1782657934770.0ms  max=-1782657934748.0ms
+21:22:58 | INFO     | utils.diagnostics      | FPS=7.4  latency avg=-1782657934804.6ms  p95=-1782657934770.0ms  max=-1782657934748.0ms
+21:23:04 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657934806.1ms  p95=-1782657934780.0ms  max=-1782657934752.0ms
+21:23:09 | INFO     | utils.diagnostics      | FPS=5.3  latency avg=-1782657934805.5ms  p95=-1782657934780.0ms  max=-1782657934752.0ms
+21:23:14 | INFO     | utils.diagnostics      | FPS=5.0  latency avg=-1782657934806.5ms  p95=-1782657934785.0ms  max=-1782657934752.0ms
+21:23:19 | INFO     | utils.diagnostics      | FPS=4.8  latency avg=-1782657934807.8ms  p95=-1782657934789.0ms  max=-1782657934776.0ms
+21:23:24 | INFO     | utils.diagnostics      | FPS=4.7  latency avg=-1782657934808.6ms  p95=-1782657934789.0ms  max=-1782657934755.0ms
+21:23:29 | INFO     | utils.diagnostics      | FPS=4.9  latency avg=-1782657934805.4ms  p95=-1782657934776.0ms  max=-1782657934679.0ms
+21:23:34 | INFO     | utils.diagnostics      | FPS=5.1  latency avg=-1782657934797.9ms  p95=-1782657934717.0ms  max=-1782657934607.0ms
+21:23:39 | INFO     | utils.diagnostics      | FPS=4.9  latency avg=-1782657934789.9ms  p95=-1782657934682.0ms  max=-1782657934607.0ms
+21:23:45 | INFO     | utils.diagnostics      | FPS=7.7  latency avg=-1782657934784.6ms  p95=-1782657934682.0ms  max=-1782657934607.0ms
+21:23:50 | INFO     | utils.diagnostics      | FPS=8.8  latency avg=-1782657934793.9ms  p95=-1782657934724.0ms  max=-1782657934609.0ms
+21:23:55 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934799.9ms  p95=-1782657934732.0ms  max=-1782657934699.0ms
+21:24:00 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934802.7ms  p95=-1782657934747.0ms  max=-1782657934671.0ms
+21:24:05 | INFO     | utils.diagnostics      | FPS=9.8  latency avg=-1782657934800.0ms  p95=-1782657934716.0ms  max=-1782657934660.0ms
+21:24:10 | INFO     | utils.diagnostics      | FPS=9.2  latency avg=-1782657934799.0ms  p95=-1782657934735.0ms  max=-1782657934660.0ms
+21:24:15 | INFO     | utils.diagnostics      | FPS=7.4  latency avg=-1782657934800.0ms  p95=-1782657934735.0ms  max=-1782657934660.0ms
+21:24:20 | INFO     | utils.diagnostics      | FPS=5.7  latency avg=-1782657934803.9ms  p95=-1782657934768.0ms  max=-1782657934710.0ms
+21:24:25 | INFO     | utils.diagnostics      | FPS=5.7  latency avg=-1782657934809.0ms  p95=-1782657934785.0ms  max=-1782657934754.0ms
+21:24:30 | INFO     | utils.diagnostics      | FPS=8.5  latency avg=-1782657934808.6ms  p95=-1782657934784.0ms  max=-1782657934754.0ms
+21:24:35 | INFO     | utils.diagnostics      | FPS=9.6  latency avg=-1782657934810.1ms  p95=-1782657934785.0ms  max=-1782657934754.0ms
+21:24:40 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934808.6ms  p95=-1782657934785.0ms  max=-1782657934756.0ms
+21:24:45 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934809.7ms  p95=-1782657934784.0ms  max=-1782657934760.0ms
+21:24:50 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934808.6ms  p95=-1782657934784.0ms  max=-1782657934760.0ms
+21:24:55 | INFO     | utils.diagnostics      | FPS=9.4  latency avg=-1782657934809.3ms  p95=-1782657934785.0ms  max=-1782657934770.0ms
+21:25:00 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934804.1ms  p95=-1782657934756.0ms  max=-1782657934704.0ms
+21:25:05 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934806.0ms  p95=-1782657934756.0ms  max=-1782657934704.0ms
+21:25:10 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657934809.4ms  p95=-1782657934781.0ms  max=-1782657934721.0ms
+21:25:15 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657934810.1ms  p95=-1782657934780.0ms  max=-1782657934750.0ms
+21:25:20 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934810.4ms  p95=-1782657934780.0ms  max=-1782657934750.0ms
+21:25:26 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934811.8ms  p95=-1782657934786.0ms  max=-1782657934759.0ms
+21:25:31 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934811.5ms  p95=-1782657934786.0ms  max=-1782657934752.0ms
+21:25:36 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934811.4ms  p95=-1782657934785.0ms  max=-1782657934752.0ms
+21:25:41 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934811.9ms  p95=-1782657934791.0ms  max=-1782657934774.0ms
+21:25:46 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934811.6ms  p95=-1782657934786.0ms  max=-1782657934753.0ms
+21:25:51 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934809.9ms  p95=-1782657934780.0ms  max=-1782657934753.0ms
+21:25:56 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934810.5ms  p95=-1782657934785.0ms  max=-1782657934753.0ms
+21:26:01 | INFO     | utils.diagnostics      | FPS=8.6  latency avg=-1782657934810.9ms  p95=-1782657934785.0ms  max=-1782657934770.0ms
+21:26:06 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934809.7ms  p95=-1782657934782.0ms  max=-1782657934757.0ms
+21:26:11 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934808.9ms  p95=-1782657934780.0ms  max=-1782657934743.0ms
+21:26:16 | INFO     | utils.diagnostics      | FPS=9.8  latency avg=-1782657934808.0ms  p95=-1782657934783.0ms  max=-1782657934575.0ms
+21:26:21 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934799.4ms  p95=-1782657934721.0ms  max=-1782657934542.0ms
+21:26:26 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934800.4ms  p95=-1782657934721.0ms  max=-1782657934542.0ms
+21:26:31 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934810.9ms  p95=-1782657934785.0ms  max=-1782657934769.0ms
+21:26:36 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934807.7ms  p95=-1782657934770.0ms  max=-1782657934599.0ms
+21:26:41 | INFO     | utils.diagnostics      | FPS=9.3  latency avg=-1782657934806.6ms  p95=-1782657934770.0ms  max=-1782657934599.0ms
+21:26:46 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934808.6ms  p95=-1782657934782.0ms  max=-1782657934599.0ms
+21:26:51 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934810.6ms  p95=-1782657934786.0ms  max=-1782657934774.0ms
+21:26:57 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934810.6ms  p95=-1782657934785.0ms  max=-1782657934774.0ms
+21:27:02 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934812.0ms  p95=-1782657934790.0ms  max=-1782657934775.0ms
+21:27:07 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934812.1ms  p95=-1782657934790.0ms  max=-1782657934745.0ms
+21:27:12 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934811.1ms  p95=-1782657934790.0ms  max=-1782657934714.0ms
+21:27:17 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934805.3ms  p95=-1782657934761.0ms  max=-1782657934547.0ms
+21:27:22 | INFO     | utils.diagnostics      | FPS=11.3  latency avg=-1782657934799.3ms  p95=-1782657934736.0ms  max=-1782657934547.0ms
+21:27:27 | INFO     | utils.diagnostics      | FPS=11.1  latency avg=-1782657934792.9ms  p95=-1782657934661.0ms  max=-1782657934445.0ms
+21:27:32 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934792.5ms  p95=-1782657934676.0ms  max=-1782657934445.0ms
+21:27:37 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934796.9ms  p95=-1782657934729.0ms  max=-1782657934445.0ms
+21:27:42 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934803.6ms  p95=-1782657934774.0ms  max=-1782657934541.0ms
+21:27:47 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934803.1ms  p95=-1782657934756.0ms  max=-1782657934541.0ms
+21:27:52 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657934775.5ms  p95=-1782657934597.0ms  max=-1782657934321.0ms
+21:27:57 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934772.8ms  p95=-1782657934597.0ms  max=-1782657934321.0ms
+21:28:02 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934787.7ms  p95=-1782657934676.0ms  max=-1782657934434.0ms
+21:28:07 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934803.9ms  p95=-1782657934763.0ms  max=-1782657934664.0ms
+21:28:12 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934808.3ms  p95=-1782657934774.0ms  max=-1782657934746.0ms
+21:28:17 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934807.9ms  p95=-1782657934777.0ms  max=-1782657934674.0ms
+21:28:23 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934805.9ms  p95=-1782657934765.0ms  max=-1782657934674.0ms
+21:28:28 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934803.8ms  p95=-1782657934772.0ms  max=-1782657934595.0ms
+21:28:33 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934803.8ms  p95=-1782657934748.0ms  max=-1782657934595.0ms
+21:28:38 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934772.9ms  p95=-1782657934487.0ms  max=-1782657934282.0ms
+21:28:43 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657934772.2ms  p95=-1782657934487.0ms  max=-1782657934282.0ms
+21:28:48 | INFO     | utils.diagnostics      | FPS=11.2  latency avg=-1782657934775.7ms  p95=-1782657934494.0ms  max=-1782657934282.0ms
+21:28:53 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934729.1ms  p95=-1782657934232.0ms  max=-1782657933763.0ms
+21:28:58 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934719.5ms  p95=-1782657934232.0ms  max=-1782657933763.0ms
+21:29:03 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934780.8ms  p95=-1782657934633.0ms  max=-1782657934518.0ms
+21:29:08 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934794.0ms  p95=-1782657934696.0ms  max=-1782657934567.0ms
+21:29:11 | INFO     | networking.server      | WS client connected  (total=2)
+21:29:13 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934806.2ms  p95=-1782657934770.0ms  max=-1782657934720.0ms
+21:29:18 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934806.8ms  p95=-1782657934766.0ms  max=-1782657934716.0ms
+21:29:23 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934803.9ms  p95=-1782657934755.0ms  max=-1782657934568.0ms
+21:29:28 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934802.7ms  p95=-1782657934755.0ms  max=-1782657934568.0ms
+21:29:33 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934806.0ms  p95=-1782657934777.0ms  max=-1782657934656.0ms
+21:29:38 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934806.2ms  p95=-1782657934775.0ms  max=-1782657934656.0ms
+21:29:43 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934805.9ms  p95=-1782657934768.0ms  max=-1782657934656.0ms
+21:29:49 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934802.3ms  p95=-1782657934756.0ms  max=-1782657934550.0ms
+21:29:54 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934802.6ms  p95=-1782657934757.0ms  max=-1782657934550.0ms
+21:29:59 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934799.5ms  p95=-1782657934752.0ms  max=-1782657934565.0ms
+21:30:04 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934795.6ms  p95=-1782657934734.0ms  max=-1782657934565.0ms
+21:30:09 | INFO     | networking.server      | WS client connected  (total=3)
+21:30:09 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934792.5ms  p95=-1782657934729.0ms  max=-1782657934565.0ms
+21:30:14 | INFO     | utils.diagnostics      | FPS=17.3  latency avg=-1782657935072.3ms  p95=-1782657934768.0ms  max=-1782657934705.0ms
+21:30:19 | INFO     | utils.diagnostics      | FPS=22.0  latency avg=-1782657935556.7ms  p95=-1782657934771.0ms  max=-1782657934512.0ms
+21:30:24 | INFO     | utils.diagnostics      | FPS=23.2  latency avg=-1782657935572.9ms  p95=-1782657934780.0ms  max=-1782657934707.0ms
+21:30:29 | INFO     | utils.diagnostics      | FPS=25.1  latency avg=-1782657935612.4ms  p95=-1782657934781.0ms  max=-1782657934704.0ms
+21:30:34 | INFO     | utils.diagnostics      | FPS=18.0  latency avg=-1782657935540.4ms  p95=-1782657934793.0ms  max=-1782657934725.0ms
+21:30:39 | INFO     | utils.diagnostics      | FPS=18.7  latency avg=-1782657935481.8ms  p95=-1782657934803.0ms  max=-1782657934791.0ms
+21:30:44 | INFO     | utils.diagnostics      | FPS=20.3  latency avg=-1782657935467.6ms  p95=-1782657934789.0ms  max=-1782657934769.0ms
+21:30:49 | INFO     | utils.diagnostics      | FPS=22.2  latency avg=-1782657935602.3ms  p95=-1782657934789.0ms  max=-1782657934747.0ms
+21:30:54 | INFO     | utils.diagnostics      | FPS=17.4  latency avg=-1782657935514.1ms  p95=-1782657934782.0ms  max=-1782657934663.0ms
+21:30:59 | INFO     | utils.diagnostics      | FPS=25.3  latency avg=-1782657935603.3ms  p95=-1782657934800.0ms  max=-1782657934758.0ms
+21:31:04 | INFO     | utils.diagnostics      | FPS=23.9  latency avg=-1782657935627.5ms  p95=-1782657934796.0ms  max=-1782657934771.0ms
+21:31:09 | INFO     | utils.diagnostics      | FPS=18.3  latency avg=-1782657935456.6ms  p95=-1782657934796.0ms  max=-1782657934764.0ms
+21:31:14 | INFO     | utils.diagnostics      | FPS=21.5  latency avg=-1782657935527.9ms  p95=-1782657934756.0ms  max=-1782657934397.0ms
+21:31:19 | INFO     | utils.diagnostics      | FPS=17.8  latency avg=-1782657935438.8ms  p95=-1782657934765.0ms  max=-1782657934688.0ms
+21:31:24 | INFO     | utils.diagnostics      | FPS=17.6  latency avg=-1782657935401.4ms  p95=-1782657934765.0ms  max=-1782657934688.0ms
+21:31:29 | INFO     | utils.diagnostics      | FPS=16.2  latency avg=-1782657935397.5ms  p95=-1782657934747.0ms  max=-1782657934545.0ms
+21:31:34 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657935105.1ms  p95=-1782657934747.0ms  max=-1782657934545.0ms
+21:31:39 | INFO     | utils.diagnostics      | FPS=13.3  latency avg=-1782657934979.9ms  p95=-1782657934780.0ms  max=-1782657934745.0ms
+21:31:44 | INFO     | utils.diagnostics      | FPS=20.0  latency avg=-1782657935329.1ms  p95=-1782657934756.0ms  max=-1782657934662.0ms
+21:31:50 | INFO     | utils.diagnostics      | FPS=22.2  latency avg=-1782657935589.3ms  p95=-1782657934791.0ms  max=-1782657934678.0ms
+21:31:55 | INFO     | utils.diagnostics      | FPS=21.1  latency avg=-1782657935588.5ms  p95=-1782657934783.0ms  max=-1782657934679.0ms
+21:32:00 | INFO     | utils.diagnostics      | FPS=20.8  latency avg=-1782657935466.7ms  p95=-1782657934782.0ms  max=-1782657934756.0ms
+21:32:05 | INFO     | utils.diagnostics      | FPS=17.5  latency avg=-1782657935430.9ms  p95=-1782657934785.0ms  max=-1782657934774.0ms
+21:32:10 | INFO     | utils.diagnostics      | FPS=11.7  latency avg=-1782657935684.0ms  p95=-1782657934786.0ms  max=-1782657934579.0ms
+21:32:15 | INFO     | utils.diagnostics      | FPS=7.7  latency avg=-1782657935962.9ms  p95=-1782657934801.0ms  max=-1782657934579.0ms
+21:32:20 | INFO     | utils.diagnostics      | FPS=12.8  latency avg=-1782657936270.0ms  p95=-1782657936259.0ms  max=-1782657936198.0ms
+21:32:25 | INFO     | utils.diagnostics      | FPS=8.9  latency avg=-1782657936271.5ms  p95=-1782657936265.0ms  max=-1782657936203.0ms
+21:32:30 | INFO     | utils.diagnostics      | FPS=12.8  latency avg=-1782657936271.4ms  p95=-1782657936265.0ms  max=-1782657936223.0ms
+21:32:35 | INFO     | utils.diagnostics      | FPS=8.1  latency avg=-1782657936271.4ms  p95=-1782657936265.0ms  max=-1782657936223.0ms
+21:32:40 | INFO     | utils.diagnostics      | FPS=6.7  latency avg=-1782657936272.0ms  p95=-1782657936264.0ms  max=-1782657936261.0ms
+21:32:45 | INFO     | utils.diagnostics      | FPS=12.7  latency avg=-1782657936271.8ms  p95=-1782657936264.0ms  max=-1782657936261.0ms
+21:33:08 | INFO     | utils.diagnostics      | FPS=2.3  latency avg=-1782657936271.7ms  p95=-1782657936264.0ms  max=-1782657936256.0ms
+21:33:13 | INFO     | utils.diagnostics      | FPS=2.2  latency avg=-1782657936271.6ms  p95=-1782657936265.0ms  max=-1782657936256.0ms
+21:33:18 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657936271.6ms  p95=-1782657936264.0ms  max=-1782657936256.0ms
+21:33:23 | INFO     | utils.diagnostics      | FPS=8.3  latency avg=-1782657936270.6ms  p95=-1782657936264.0ms  max=-1782657936165.0ms
+21:33:28 | INFO     | utils.diagnostics      | FPS=6.7  latency avg=-1782657936270.7ms  p95=-1782657936264.0ms  max=-1782657936165.0ms
+21:33:33 | INFO     | utils.diagnostics      | FPS=8.1  latency avg=-1782657936270.3ms  p95=-1782657936264.0ms  max=-1782657936165.0ms
+21:33:38 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657936270.0ms  p95=-1782657936259.0ms  max=-1782657936209.0ms
+21:33:43 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657936268.9ms  p95=-1782657936247.0ms  max=-1782657936137.0ms
+21:33:52 | INFO     | utils.diagnostics      | FPS=5.2  latency avg=-1782657936270.5ms  p95=-1782657936264.0ms  max=-1782657936137.0ms
+21:33:57 | INFO     | utils.diagnostics      | FPS=4.6  latency avg=-1782657936268.1ms  p95=-1782657936246.0ms  max=-1782657936088.0ms
+21:34:08 | INFO     | networking.server      | WS client disconnected
+21:34:08 | INFO     | networking.server      | WS cleanup done  (remaining=2)
+21:38:07 | INFO     | utils.diagnostics      | FPS=0.2  latency avg=-1782657936268.7ms  p95=-1782657936246.0ms  max=-1782657936088.0ms
+21:38:13 | INFO     | utils.diagnostics      | FPS=0.2  latency avg=-1782657936268.8ms  p95=-1782657936262.0ms  max=-1782657936088.0ms
+21:38:18 | INFO     | utils.diagnostics      | FPS=7.5  latency avg=-1782657936268.2ms  p95=-1782657936261.0ms  max=-1782657936088.0ms
+21:38:23 | INFO     | utils.diagnostics      | FPS=8.6  latency avg=-1782657936270.2ms  p95=-1782657936262.0ms  max=-1782657936243.0ms
+21:38:28 | INFO     | utils.diagnostics      | FPS=7.6  latency avg=-1782657936270.1ms  p95=-1782657936262.0ms  max=-1782657936230.0ms
+21:38:33 | INFO     | utils.diagnostics      | FPS=14.1  latency avg=-1782657936270.9ms  p95=-1782657936263.0ms  max=-1782657936230.0ms
+21:38:38 | INFO     | utils.diagnostics      | FPS=11.9  latency avg=-1782657936270.4ms  p95=-1782657936263.0ms  max=-1782657936181.0ms
+21:38:43 | INFO     | utils.diagnostics      | FPS=13.0  latency avg=-1782657936270.9ms  p95=-1782657936264.0ms  max=-1782657936181.0ms
+21:38:48 | INFO     | utils.diagnostics      | FPS=11.5  latency avg=-1782657936271.9ms  p95=-1782657936265.0ms  max=-1782657936264.0ms
+21:38:53 | INFO     | utils.diagnostics      | FPS=12.7  latency avg=-1782657936271.4ms  p95=-1782657936264.0ms  max=-1782657936262.0ms
+21:38:58 | INFO     | utils.diagnostics      | FPS=11.3  latency avg=-1782657936271.3ms  p95=-1782657936264.0ms  max=-1782657936262.0ms
+21:39:03 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657936271.4ms  p95=-1782657936264.0ms  max=-1782657936263.0ms
+21:39:08 | INFO     | utils.diagnostics      | FPS=9.8  latency avg=-1782657936271.9ms  p95=-1782657936264.0ms  max=-1782657936263.0ms
+21:39:13 | INFO     | utils.diagnostics      | FPS=8.1  latency avg=-1782657936271.2ms  p95=-1782657936264.0ms  max=-1782657936262.0ms
+21:39:18 | INFO     | utils.diagnostics      | FPS=11.2  latency avg=-1782657936270.9ms  p95=-1782657936264.0ms  max=-1782657936261.0ms
+21:39:23 | INFO     | utils.diagnostics      | FPS=13.3  latency avg=-1782657936270.8ms  p95=-1782657936264.0ms  max=-1782657936259.0ms
+21:39:27 | INFO     | networking.server      | WS client disconnected
+21:39:27 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+21:39:53 | INFO     | networking.server      | WS client disconnected
+21:39:53 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+21:41:26 | INFO     | main                   | Paper Keyboard starting …
+21:41:31 | INFO     | core.typer             | pynput keyboard controller ready
+21:41:33 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+21:41:33 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+21:41:33 | DEBUG    | asyncio                | Using proactor: IocpProactor
+21:41:34 | INFO     | networking.server      | WS client connected  (total=1)
+21:42:11 | INFO     | networking.server      | WS client connected  (total=2)
+21:42:11 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657934832.0ms  p95=-1782657934832.0ms  max=-1782657934832.0ms
+21:42:14 | INFO     | networking.server      | WS client connected  (total=3)
+21:42:16 | INFO     | utils.diagnostics      | FPS=9.8  latency avg=-1782657934819.0ms  p95=-1782657934795.0ms  max=-1782657934785.0ms
+21:42:21 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934819.9ms  p95=-1782657934799.0ms  max=-1782657934785.0ms
+21:42:26 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934821.3ms  p95=-1782657934799.0ms  max=-1782657934776.0ms
+21:42:32 | INFO     | utils.diagnostics      | FPS=11.4  latency avg=-1782657934811.1ms  p95=-1782657934738.0ms  max=-1782657934414.0ms
+21:42:37 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934809.9ms  p95=-1782657934738.0ms  max=-1782657934414.0ms
+21:42:42 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934822.5ms  p95=-1782657934799.0ms  max=-1782657934750.0ms
+21:42:47 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934822.1ms  p95=-1782657934793.0ms  max=-1782657934786.0ms
+21:42:52 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934823.0ms  p95=-1782657934802.0ms  max=-1782657934789.0ms
+21:42:57 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934824.0ms  p95=-1782657934802.0ms  max=-1782657934789.0ms
+21:43:02 | INFO     | utils.diagnostics      | FPS=10.1  latency avg=-1782657934819.8ms  p95=-1782657934794.0ms  max=-1782657934611.0ms
+21:43:07 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934818.1ms  p95=-1782657934794.0ms  max=-1782657934611.0ms
+21:43:12 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934817.9ms  p95=-1782657934792.0ms  max=-1782657934611.0ms
+21:43:18 | INFO     | utils.diagnostics      | FPS=8.5  latency avg=-1782657934820.4ms  p95=-1782657934796.0ms  max=-1782657934761.0ms
+21:43:23 | INFO     | utils.diagnostics      | FPS=7.0  latency avg=-1782657934822.3ms  p95=-1782657934803.0ms  max=-1782657934761.0ms
+21:43:28 | INFO     | utils.diagnostics      | FPS=9.2  latency avg=-1782657934818.9ms  p95=-1782657934784.0ms  max=-1782657934726.0ms
+21:43:33 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934793.4ms  p95=-1782657934626.0ms  max=-1782657934500.0ms
+21:43:38 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934782.3ms  p95=-1782657934608.0ms  max=-1782657934500.0ms
+21:43:43 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934807.0ms  p95=-1782657934708.0ms  max=-1782657934584.0ms
+21:43:49 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934818.3ms  p95=-1782657934785.0ms  max=-1782657934611.0ms
+21:43:54 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934819.7ms  p95=-1782657934786.0ms  max=-1782657934761.0ms
+21:43:59 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934820.6ms  p95=-1782657934790.0ms  max=-1782657934761.0ms
+21:44:04 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934819.0ms  p95=-1782657934789.0ms  max=-1782657934492.0ms
+21:44:09 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934814.9ms  p95=-1782657934782.0ms  max=-1782657934492.0ms
+21:44:14 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934815.4ms  p95=-1782657934785.0ms  max=-1782657934492.0ms
+21:44:19 | INFO     | utils.diagnostics      | FPS=11.1  latency avg=-1782657934822.3ms  p95=-1782657934800.0ms  max=-1782657934729.0ms
+21:44:24 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934819.8ms  p95=-1782657934782.0ms  max=-1782657934729.0ms
+21:44:29 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934821.5ms  p95=-1782657934784.0ms  max=-1782657934729.0ms
+21:44:34 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934821.7ms  p95=-1782657934789.0ms  max=-1782657934729.0ms
+21:44:39 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657934818.7ms  p95=-1782657934774.0ms  max=-1782657934746.0ms
+21:44:44 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934800.2ms  p95=-1782657934736.0ms  max=-1782657934414.0ms
+21:44:49 | INFO     | utils.diagnostics      | FPS=7.3  latency avg=-1782657934784.4ms  p95=-1782657934669.0ms  max=-1782657934414.0ms
+21:44:54 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934780.1ms  p95=-1782657934669.0ms  max=-1782657934414.0ms
+21:45:20 | INFO     | utils.diagnostics      | FPS=2.0  latency avg=-1782657934781.8ms  p95=-1782657934669.0ms  max=-1782657934414.0ms
+21:45:30 | INFO     | utils.diagnostics      | FPS=1.5  latency avg=-1782657934791.8ms  p95=-1782657934695.0ms  max=-1782657934609.0ms
+21:45:35 | INFO     | utils.diagnostics      | FPS=3.8  latency avg=-1782657934812.9ms  p95=-1782657934750.0ms  max=-1782657934706.0ms
+21:45:40 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934820.6ms  p95=-1782657934793.0ms  max=-1782657934777.0ms
+21:45:44 | INFO     | networking.server      | WS client disconnected
+21:45:44 | INFO     | networking.server      | WS cleanup done  (remaining=2)
+21:45:44 | INFO     | networking.server      | WS client disconnected
+21:45:44 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+21:45:44 | INFO     | networking.server      | WS client disconnected
+21:45:44 | INFO     | networking.server      | WS cleanup done  (remaining=0)
+23:30:14 | INFO     | main                   | Paper Keyboard starting …
+23:30:23 | INFO     | core.typer             | pynput keyboard controller ready
+23:30:26 | WARNING  | core.debounce          | Tick generation failed: Array must be 2-dimensional for stereo mixer
+23:30:26 | INFO     | core.keyboard_map      | KeyboardMap: 68 keys loaded
+23:30:26 | DEBUG    | asyncio                | Using proactor: IocpProactor
+23:30:28 | INFO     | networking.server      | WS client connected  (total=1)
+23:30:30 | INFO     | networking.server      | WS client connected  (total=2)
+23:32:54 | INFO     | networking.server      | WS client disconnected
+23:32:54 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+23:32:55 | INFO     | networking.server      | WS client connected  (total=2)
+23:32:57 | INFO     | utils.diagnostics      | FPS=0.0  latency avg=-1782657934275.0ms  p95=-1782657934275.0ms  max=-1782657934275.0ms
+23:33:02 | INFO     | utils.diagnostics      | FPS=13.6  latency avg=-1782657934266.5ms  p95=-1782657934249.0ms  max=-1782657934233.0ms
+23:33:07 | INFO     | utils.diagnostics      | FPS=11.1  latency avg=-1782657934267.4ms  p95=-1782657934249.0ms  max=-1782657934181.0ms
+23:33:12 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934266.6ms  p95=-1782657934237.0ms  max=-1782657934181.0ms
+23:33:17 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934258.4ms  p95=-1782657934181.0ms  max=-1782657934056.0ms
+23:33:22 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934259.7ms  p95=-1782657934196.0ms  max=-1782657934056.0ms
+23:33:27 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934261.6ms  p95=-1782657934211.0ms  max=-1782657933982.0ms
+23:33:32 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934256.6ms  p95=-1782657934159.0ms  max=-1782657933982.0ms
+23:33:37 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934257.5ms  p95=-1782657934159.0ms  max=-1782657933982.0ms
+23:33:42 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934271.5ms  p95=-1782657934246.0ms  max=-1782657934235.0ms
+23:33:47 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934271.6ms  p95=-1782657934246.0ms  max=-1782657934233.0ms
+23:33:52 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934268.3ms  p95=-1782657934244.0ms  max=-1782657934135.0ms
+23:33:57 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934268.3ms  p95=-1782657934240.0ms  max=-1782657934135.0ms
+23:34:02 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934270.4ms  p95=-1782657934242.0ms  max=-1782657934234.0ms
+23:34:07 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934270.1ms  p95=-1782657934241.0ms  max=-1782657934232.0ms
+23:34:12 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934265.2ms  p95=-1782657934221.0ms  max=-1782657934138.0ms
+23:34:17 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934263.2ms  p95=-1782657934212.0ms  max=-1782657934138.0ms
+23:34:22 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934259.5ms  p95=-1782657934191.0ms  max=-1782657934025.0ms
+23:34:27 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934261.3ms  p95=-1782657934209.0ms  max=-1782657934025.0ms
+23:34:32 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934263.7ms  p95=-1782657934222.0ms  max=-1782657934107.0ms
+23:34:37 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934268.3ms  p95=-1782657934235.0ms  max=-1782657934194.0ms
+23:34:42 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934269.0ms  p95=-1782657934250.0ms  max=-1782657934223.0ms
+23:34:47 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934268.8ms  p95=-1782657934250.0ms  max=-1782657934223.0ms
+23:34:52 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934264.1ms  p95=-1782657934215.0ms  max=-1782657934178.0ms
+23:34:58 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934264.8ms  p95=-1782657934215.0ms  max=-1782657934178.0ms
+23:35:03 | INFO     | utils.diagnostics      | FPS=10.8  latency avg=-1782657934268.3ms  p95=-1782657934240.0ms  max=-1782657934215.0ms
+23:35:08 | INFO     | utils.diagnostics      | FPS=11.0  latency avg=-1782657934268.6ms  p95=-1782657934241.0ms  max=-1782657934205.0ms
+23:35:13 | INFO     | utils.diagnostics      | FPS=11.5  latency avg=-1782657934270.1ms  p95=-1782657934246.0ms  max=-1782657934205.0ms
+23:35:18 | INFO     | utils.diagnostics      | FPS=11.6  latency avg=-1782657934268.1ms  p95=-1782657934237.0ms  max=-1782657934155.0ms
+23:35:23 | INFO     | utils.diagnostics      | FPS=11.4  latency avg=-1782657934261.1ms  p95=-1782657934184.0ms  max=-1782657934155.0ms
+23:35:28 | INFO     | utils.diagnostics      | FPS=11.4  latency avg=-1782657934237.8ms  p95=-1782657934103.0ms  max=-1782657933808.0ms
+23:35:33 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934247.2ms  p95=-1782657934103.0ms  max=-1782657933808.0ms
+23:35:38 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934258.3ms  p95=-1782657934224.0ms  max=-1782657933808.0ms
+23:35:43 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934271.1ms  p95=-1782657934244.0ms  max=-1782657934236.0ms
+23:35:48 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934271.2ms  p95=-1782657934245.0ms  max=-1782657934239.0ms
+23:35:53 | INFO     | utils.diagnostics      | FPS=10.5  latency avg=-1782657934271.3ms  p95=-1782657934245.0ms  max=-1782657934211.0ms
+23:35:58 | INFO     | utils.diagnostics      | FPS=10.0  latency avg=-1782657934271.6ms  p95=-1782657934242.0ms  max=-1782657934211.0ms
+23:36:03 | INFO     | utils.diagnostics      | FPS=9.9  latency avg=-1782657934270.0ms  p95=-1782657934240.0ms  max=-1782657934221.0ms
+23:36:08 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934269.2ms  p95=-1782657934240.0ms  max=-1782657934224.0ms
+23:36:13 | INFO     | utils.diagnostics      | FPS=10.6  latency avg=-1782657934267.4ms  p95=-1782657934235.0ms  max=-1782657934185.0ms
+23:36:18 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934266.4ms  p95=-1782657934231.0ms  max=-1782657934117.0ms
+23:36:23 | INFO     | utils.diagnostics      | FPS=10.4  latency avg=-1782657934270.1ms  p95=-1782657934247.0ms  max=-1782657934117.0ms
+23:36:29 | INFO     | utils.diagnostics      | FPS=10.2  latency avg=-1782657934271.8ms  p95=-1782657934253.0ms  max=-1782657934227.0ms
+23:36:34 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934270.2ms  p95=-1782657934252.0ms  max=-1782657934224.0ms
+23:36:39 | INFO     | utils.diagnostics      | FPS=10.3  latency avg=-1782657934272.0ms  p95=-1782657934256.0ms  max=-1782657934224.0ms
+23:36:44 | INFO     | utils.diagnostics      | FPS=10.9  latency avg=-1782657934273.4ms  p95=-1782657934258.0ms  max=-1782657934224.0ms
+23:36:49 | INFO     | utils.diagnostics      | FPS=9.5  latency avg=-1782657934273.2ms  p95=-1782657934255.0ms  max=-1782657934235.0ms
+23:36:54 | INFO     | utils.diagnostics      | FPS=7.7  latency avg=-1782657934270.8ms  p95=-1782657934236.0ms  max=-1782657934133.0ms
+23:36:59 | INFO     | utils.diagnostics      | FPS=9.1  latency avg=-1782657934261.7ms  p95=-1782657934159.0ms  max=-1782657934057.0ms
+23:37:04 | INFO     | utils.diagnostics      | FPS=8.7  latency avg=-1782657934259.3ms  p95=-1782657934159.0ms  max=-1782657934057.0ms
+23:37:09 | INFO     | utils.diagnostics      | FPS=6.5  latency avg=-1782657934257.9ms  p95=-1782657934156.0ms  max=-1782657934057.0ms
+23:37:14 | INFO     | utils.diagnostics      | FPS=5.9  latency avg=-1782657934262.4ms  p95=-1782657934168.0ms  max=-1782657934057.0ms
+23:37:20 | INFO     | utils.diagnostics      | FPS=6.1  latency avg=-1782657934266.3ms  p95=-1782657934227.0ms  max=-1782657934135.0ms
+23:37:26 | INFO     | utils.diagnostics      | FPS=4.8  latency avg=-1782657934267.9ms  p95=-1782657934228.0ms  max=-1782657934135.0ms
+23:37:31 | INFO     | utils.diagnostics      | FPS=6.0  latency avg=-1782657934269.9ms  p95=-1782657934243.0ms  max=-1782657934184.0ms
+23:37:36 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657934270.3ms  p95=-1782657934243.0ms  max=-1782657934127.0ms
+23:37:41 | INFO     | utils.diagnostics      | FPS=9.7  latency avg=-1782657934266.3ms  p95=-1782657934223.0ms  max=-1782657934127.0ms
+23:37:46 | INFO     | utils.diagnostics      | FPS=10.7  latency avg=-1782657934237.7ms  p95=-1782657934093.0ms  max=-1782657933892.0ms
+23:37:49 | INFO     | networking.server      | WS client disconnected
+23:37:49 | INFO     | networking.server      | WS cleanup done  (remaining=1)
+23:37:49 | INFO     | networking.server      | WS client disconnected
+23:37:49 | INFO     | networking.server      | WS cleanup done  (remaining=0)
