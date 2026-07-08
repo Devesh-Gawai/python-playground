@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>Paper Keyboard</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{width:100%;height:100%;background:#000;overflow:hidden;font-family:system-ui,sans-serif;color:#fff}
+
+  /* ── Video / Canvas layer ── */
+  #video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transform:scaleX(-1);display:none}
+  #canvas{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+
+  /* ── HUD overlay ── */
+  #hud{
+    position:absolute;top:0;left:0;width:100%;height:100%;
+    display:flex;flex-direction:column;justify-content:space-between;
+    pointer-events:none;
+  }
+
+  /* Status bar */
+  #statusBar{
+    display:flex;align-items:center;gap:8px;
+    padding:10px 14px;
+    background:rgba(0,0,0,.55);
+    font-size:13px;font-weight:600;letter-spacing:.3px;
+  }
+  #dot{width:10px;height:10px;border-radius:50%;background:#666;flex-shrink:0;transition:background .3s}
+  #dot.connecting{background:#f5a623}
+  #dot.connected{background:#4cd964}
+  #dot.calibrated{background:#34c7ff}
+  #statusTxt{flex:1}
+  #fpsLbl{opacity:.7;font-size:11px}
+
+  /* Key flash */
+  #keyFlash{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    font-size:64px;font-weight:900;letter-spacing:-2px;
+    text-shadow:0 4px 24px rgba(0,0,0,.9);
+    opacity:0;pointer-events:none;transition:opacity .08s;
+    user-select:none;
+  }
+  #keyFlash.show{opacity:1}
+
+  /* Bottom toolbar */
+  #toolbar{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:100;
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    padding:14px 16px;
+    background:rgba(0,0,0,.55);
+    pointer-events:all;
+  }
+
+  button{
+    border:none;border-radius:12px;padding:12px 26px;
+    font-size:15px;font-weight:700;cursor:pointer;
+    transition:opacity .15s,transform .1s;
+    appearance: none;
+    -webkit-appearance:none;
+  }
+  button:active{opacity:.75;transform:scale(.96)}
+  #btnCalibrate{background:#34c7ff;color:#000}
+  #btnReset{background:#ff3b30;color:#fff}
+  #btnFlip{background:rgba(255,255,255,.18);color:#fff;font-size:13px;padding:10px 18px}
+
+  /* Loading overlay */
+  #loading{
+    position:absolute;inset:0;background:#000;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:20px;z-index:10;
+  }
+  #loading h2{font-size:22px;font-weight:700}
+  #loading p{font-size:14px;opacity:.7;text-align:center;padding:0 24px}
+  .spinner{
+    width:48px;height:48px;border:4px solid rgba(255,255,255,.2);
+    border-top-color:#34c7ff;border-radius:50%;
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* Calibration guide corners */
+  .corner{
+    position:absolute;width:40px;height:40px;border-color:#34c7ff;border-style:solid;
+    border-width:0;opacity:.85;
+  }
+  .corner.tl{top:18px;left:18px;border-top-width:3px;border-left-width:3px}
+  .corner.tr{top:18px;right:18px;border-top-width:3px;border-right-width:3px}
+  .corner.bl{bottom:90px;left:18px;border-bottom-width:3px;border-left-width:3px}
+  .corner.br{bottom:90px;right:18px;border-bottom-width:3px;border-right-width:3px}
+
+  /* Notification toast */
+  #toast{
+    position:absolute;bottom:90px;left:50%;transform:translateX(-50%);
+    background:rgba(0,0,0,.80);border-radius:10px;padding:10px 20px;
+    font-size:13px;white-space:nowrap;opacity:0;
+    transition:opacity .3s;pointer-events:none;
+  }
+  #toast.show{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Camera feed (hidden — we draw to canvas) -->
+<video id="video" autoplay playsinline muted></video>
+
+<!-- Render canvas -->
+<canvas id="canvas"></canvas>
+
+<!-- HUD -->
+<div id="hud">
+  <div id="statusBar">
+    <div id="dot" class="connecting"></div>
+    <span id="statusTxt">Connecting…</span>
+    <span id="fpsLbl"></span>
+  </div>
+
+  <div><!-- spacer --></div>
+  <div><!-- spacer --></div>
+</div>
+
+<!-- Calibration corner guides -->
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+<!-- Key flash -->
+<div id="keyFlash">A</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Bottom toolbar -->
+<div id="toolbar">
+  <button id="btnFlip">🔄 Flip</button>
+  <button id="btnCalibrate">📐 CALIBRATE</button>
+  <button id="btnReset">✖ Reset</button>
+</div>
+
+<!-- Loading overlay -->
+<div id="loading">
+  <div class="spinner"></div>
+  <h2>Paper Keyboard</h2>
+  <p id="loadingMsg">Loading hand-tracking model…</p>
+</div>
+
+<script type="module">
+// ═══════════════════════════════════════════════════════════════════════════
+//  Paper Keyboard — Mobile Client
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── MediaPipe tasks-vision via CDN ─────────────────────────────────────────
+import {
+  HandLandmarker,
+  FilesetResolver
+} from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/vision_bundle.mjs";
+
+// ── DOM refs ───────────────────────────────────────────────────────────────
+const video      = document.getElementById("video");
+const canvas     = document.getElementById("canvas");
+const ctx        = canvas.getContext("2d");
+const loading    = document.getElementById("loading");
+const loadingMsg = document.getElementById("loadingMsg");
+const dot        = document.getElementById("dot");
+const statusTxt  = document.getElementById("statusTxt");
+const fpsLbl     = document.getElementById("fpsLbl");
+const keyFlash   = document.getElementById("keyFlash");
+const toast      = document.getElementById("toast");
+const btnCalibrate = document.getElementById("btnCalibrate");
+const btnReset     = document.getElementById("btnReset");
+const btnFlip      = document.getElementById("btnFlip");
+
+// ── State ──────────────────────────────────────────────────────────────────
+let handLandmarker = null;
+let ws             = null;
+let wsReady        = false;
+let calibrated     = false;
+let facingMode     = "environment";   // "environment" = rear cam (phone overhead)
+let lastKeyFlashTimer = null;
+let animFrameId    = null;
+let serverFps      = 0;
+let clientFps      = 0;
+let lastClientFpsTs= performance.now();
+let clientFrameN   = 0;
+
+// Landmark connections for hand skeleton drawing
+const HAND_CONNECTIONS = [
+  [0,1],[1,2],[2,3],[3,4],       // thumb
+  [0,5],[5,6],[6,7],[7,8],       // index
+  [0,9],[9,10],[10,11],[11,12],  // middle
+  [0,13],[13,14],[14,15],[15,16],// ring
+  [0,17],[17,18],[18,19],[19,20],// pinky
+  [5,9],[9,13],[13,17]           // palm
+];
+
+// ── Utility ────────────────────────────────────────────────────────────────
+function setStatus(text, state) {
+  statusTxt.textContent = text;
+  dot.className = state || "";
+}
+
+function showToast(msg, durationMs = 2500) {
+  toast.textContent = msg;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), durationMs);
+}
+
+function flashKey(name) {
+  keyFlash.textContent = name;
+  keyFlash.classList.add("show");
+  clearTimeout(lastKeyFlashTimer);
+  lastKeyFlashTimer = setTimeout(() => keyFlash.classList.remove("show"), 550);
+}
+
+// ── WebSocket ──────────────────────────────────────────────────────────────
+function connectWS() {
+  const proto = location.protocol === "https:" ? "wss:" : "ws:";
+  const url   = `${proto}//${location.host}/ws`;
+  ws = new WebSocket(url);
+
+  ws.onopen = () => {
+    wsReady = true;
+    setStatus("Connected — not calibrated", "connected");
+    showToast("Connected to server ✓");
+  };
+
+  ws.onclose = () => {
+    wsReady = false;
+    calibrated = false;
+    setStatus("Reconnecting…", "connecting");
+    setTimeout(connectWS, 2000);
+  };
+
+  ws.onerror = () => {
+    setStatus("Connection error", "connecting");
+  };
+
+  ws.onmessage = (ev) => {
+    try {
+      const msg = JSON.parse(ev.data);
+      handleServerMessage(msg);
+    } catch(_) {}
+  };
+}
+
+function wsSend(obj) {
+  if (ws && wsReady && ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify(obj));
+  }
+}
+
+function handleServerMessage(msg) {
+  switch (msg.type) {
+    case "calibration_result":
+      if (msg.ok) {
+        calibrated = true;
+        setStatus(`Calibrated ✓  markers: ${msg.detected_markers}`, "calibrated");
+        showToast("🎯 Calibration successful! Start typing.");
+      } else {
+        calibrated = false;
+        setStatus("Calibration failed", "connected");
+        showToast(`❌ ${msg.message}`, 4000);
+      }
+      break;
+
+    case "key_event":
+      flashKey(msg.key);
+      break;
+
+    case "status":
+      calibrated  = msg.calibrated;
+      serverFps   = msg.fps;
+      if (!calibrated && wsReady) {
+        setStatus("Connected — tap CALIBRATE", "connected");
+      }
+      break;
+
+    case "pong":
+      // latency = Date.now() - msg.client_ts
+      break;
+
+    case "error":
+      console.warn("Server error:", msg.message);
+      break;
+  }
+}
+
+// ── MediaPipe Init ─────────────────────────────────────────────────────────
+async function initMediaPipe() {
+  loadingMsg.textContent = "Loading hand-tracking model…";
+  const filesetResolver = await FilesetResolver.forVisionTasks(
+    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/wasm"
+  );
+  handLandmarker = await HandLandmarker.createFromOptions(filesetResolver, {
+    baseOptions: {
+      modelAssetPath:
+        "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+      delegate: "GPU",
+    },
+    runningMode: "VIDEO",
+    numHands: 2,
+    minHandDetectionConfidence: 0.6,
+    minHandPresenceConfidence:  0.5,
+    minTrackingConfidence:      0.5,
+  });
+}
+
+// ── Camera ─────────────────────────────────────────────────────────────────
+async function startCamera() {
+  loadingMsg.textContent = "Starting camera…";
+  if (video.srcObject) {
+    video.srcObject.getTracks().forEach(t => t.stop());
+  }
+  const constraints = {
+    video: {
+      facingMode: { ideal: facingMode },
+      width:  { ideal: 1280 },
+      height: { ideal: 720 },
+    },
+    audio: false,
+  };
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    video.srcObject = stream;
+    await new Promise(res => { video.onloadedmetadata = res; });
+    await video.play();
+  } catch (err) {
+    // Fall back to any available camera
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+    video.srcObject = stream;
+    await new Promise(res => { video.onloadedmetadata = res; });
+    await video.play();
+  }
+}
+
+function resizeCanvas() {
+  canvas.width  = video.videoWidth  || window.innerWidth;
+  canvas.height = video.videoHeight || window.innerHeight;
+}
+
+// ── Mean palm z (landmarks 0,5,9,13,17) ───────────────────────────────────
+function palmZ(lm) {
+  return (lm[0].z + lm[5].z + lm[9].z + lm[13].z + lm[17].z) / 5;
+}
+
+// ── Draw helpers ───────────────────────────────────────────────────────────
+function drawSkeleton(lm, W, H) {
+  ctx.strokeStyle = "rgba(255,255,255,0.55)";
+  ctx.lineWidth   = 2;
+  for (const [a, b] of HAND_CONNECTIONS) {
+    ctx.beginPath();
+    ctx.moveTo(lm[a].x * W, lm[a].y * H);
+    ctx.lineTo(lm[b].x * W, lm[b].y * H);
+    ctx.stroke();
+  }
+  // Joints
+  for (let i = 0; i < 21; i++) {
+    const r = (i === 8) ? 10 : 4;
+    ctx.beginPath();
+    ctx.arc(lm[i].x * W, lm[i].y * H, r, 0, Math.PI * 2);
+    ctx.fillStyle = (i === 8) ? "#ff3b30" : "rgba(255,255,255,0.7)";
+    ctx.fill();
+  }
+}
+
+function drawCalibrationGuide() {
+  ctx.save();
+  const m  = 24;
+  const L  = 36;
+  const W  = canvas.width;
+  const H  = canvas.height;
+  ctx.strokeStyle = calibrated ? "#34c7ff" : "#f5a623";
+  ctx.lineWidth   = 3;
+  const corners = [
+    [m, m, 1, 1], [W-m, m, -1, 1], [m, H-m, 1, -1], [W-m, H-m, -1, -1]
+  ];
+  for (const [x, y, sx, sy] of corners) {
+    ctx.beginPath();
+    ctx.moveTo(x, y); ctx.lineTo(x + sx * L, y);
+    ctx.moveTo(x, y); ctx.lineTo(x, y + sy * L);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+// ── Main render loop ───────────────────────────────────────────────────────
+let lastVideoTime = -1;
+
+function renderLoop() {
+  animFrameId = requestAnimationFrame(renderLoop);
+
+  if (video.readyState < 2) return;
+  resizeCanvas();
+
+  const W = canvas.width;
+  const H = canvas.height;
+
+  // Draw mirrored camera feed
+  ctx.save();
+  ctx.scale(-1, 1);
+  ctx.drawImage(video, -W, 0, W, H);
+  ctx.restore();
+
+  drawCalibrationGuide();
+
+  // Run MediaPipe (only on new frames)
+  if (!handLandmarker) return;
+  const now = video.currentTime;
+  if (now === lastVideoTime) return;
+  lastVideoTime = now;
+
+  const ts = performance.now();
+  const results = handLandmarker.detectForVideo(video, ts);
+
+  // Client FPS counter
+  clientFrameN++;
+  const elapsed = ts - lastClientFpsTs;
+  if (elapsed >= 1000) {
+    clientFps       = Math.round(clientFrameN * 1000 / elapsed);
+    clientFrameN    = 0;
+    lastClientFpsTs = ts;
+    fpsLbl.textContent = `${clientFps} fps`;
+  }
+
+  if (!results.landmarks || results.landmarks.length === 0) {
+    wsSend({ type: "finger", visible: false,
+      tip:{x:0,y:0,z:0}, dip:{x:0,y:0,z:0},
+      pip:{x:0,y:0,z:0}, mcp:{x:0,y:0,z:0},
+      wrist:{x:0,y:0,z:0}, palm_z:0, ts: Date.now() });
+    return;
+  }
+
+  // Pick the index-finger hand (prefer right hand)
+  let lm = results.landmarks[0];
+  if (results.handedness && results.handedness.length > 1) {
+    const idx = results.handedness.findIndex(h =>
+      h[0]?.categoryName === "Right");
+    if (idx >= 0) lm = results.landmarks[idx];
+  }
+
+  // Mirror X because canvas is flipped
+  const mirror = (pt) => ({ x: 1 - pt.x, y: pt.y, z: pt.z });
+
+  drawSkeleton(
+    lm.map(p => ({ x: 1 - p.x, y: p.y, z: p.z })),
+    W, H
+  );
+
+  // Send finger packet
+  const pz = palmZ(lm);
+  wsSend({
+    type:    "finger",
+    tip:     mirror(lm[8]),
+    dip:     mirror(lm[7]),
+    pip:     mirror(lm[6]),
+    mcp:     mirror(lm[5]),
+    wrist:   mirror(lm[0]),
+    palm_z:  pz,
+    visible: true,
+    ts:      Date.now(),
+  });
+}
+
+// ── Calibration capture ────────────────────────────────────────────────────
+async function doCalibrate() {
+  btnCalibrate.disabled = true;
+  btnCalibrate.textContent = "Calibrating…";
+  setStatus("Sending frame for calibration…", "connecting");
+
+  try {
+    // Capture current video frame as JPEG
+    const offscreen = new OffscreenCanvas(video.videoWidth, video.videoHeight);
+    const offCtx    = offscreen.getContext("2d");
+    offCtx.drawImage(video, 0, 0);
+    const blob      = await offscreen.convertToBlob({ type:"image/jpeg", quality:0.88 });
+    const b64       = await blobToBase64(blob);
+
+    const resp = await fetch("/calibrate", {
+      method:  "POST",
+      headers: { "Content-Type":"application/json" },
+      body:    JSON.stringify({
+        image:  b64,
+        width:  video.videoWidth,
+        height: video.videoHeight,
+      }),
+    });
+    const result = await resp.json();
+    handleServerMessage({ type:"calibration_result", ...result });
+  } catch(err) {
+    showToast(`Calibration error: ${err.message}`, 4000);
+    setStatus("Calibration error", "connected");
+  } finally {
+    btnCalibrate.disabled = false;
+    btnCalibrate.textContent = "📐 CALIBRATE";
+  }
+}
+
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result.split(",")[1]);
+    reader.onerror   = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
+// ── Button handlers ────────────────────────────────────────────────────────
+btnCalibrate.addEventListener("click", doCalibrate);
+
+btnReset.addEventListener("click", () => {
+  calibrated = false;
+  setStatus("Calibration reset", "connected");
+  showToast("Calibration cleared");
+});
+
+btnFlip.addEventListener("click", async () => {
+  facingMode = (facingMode === "environment") ? "user" : "environment";
+  if (animFrameId) cancelAnimationFrame(animFrameId);
+  await startCamera();
+  resizeCanvas();
+  renderLoop();
+  showToast(`Camera: ${facingMode === "environment" ? "Rear" : "Front"}`);
+});
+
+// ── Startup ────────────────────────────────────────────────────────────────
+(async function init() {
+  try {
+    setStatus("Loading…", "connecting");
+    await initMediaPipe();
+    loadingMsg.textContent = "Starting camera…";
+    await startCamera();
+    resizeCanvas();
+
+    loading.style.display = "none";
+    setStatus("Connecting to server…", "connecting");
+
+    connectWS();
+    renderLoop();
+  } catch(err) {
+    loadingMsg.textContent = `Error: ${err.message}`;
+    console.error(err);
+  }
+})();
+</script>
+</body>
+</html>

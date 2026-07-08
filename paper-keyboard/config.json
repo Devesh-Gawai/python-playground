@@ -1,0 +1,51 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "ws_path": "/ws",
+    "calibrate_path": "/calibrate"
+  },
+  "aruco": {
+    "dictionary": "DICT_4X4_50",
+    "marker_ids": [0, 1, 2, 3],
+    "min_perimeter": 40,
+    "corner_refine": true
+  },
+  "keyboard_map": {
+    "key_width":  0.0765,
+    "key_height": 0.140,
+    "x_start":   -0.095,
+    "y_esc":      0.055,
+    "y_num":      0.195,
+    "y_qwe":      0.335,
+    "y_asd":      0.475,
+    "y_zxc":      0.615,
+    "y_spc":      0.755,
+    "y_bot":      0.895
+  },
+  "touch": {
+  "z_contact_threshold": 0.012,
+  "img_dist_threshold": 0.100,
+  "velocity_window": 3,
+  "min_downward_velocity": 0.0005,
+  "stop_velocity_threshold": 0.0025,
+  "position_stability_px": 0.030,
+  "confirm_frames": 1,
+  "visibility_threshold": 0.55,
+  "cooldown_ms": 150
+  },
+  "sound": {
+    "enabled":      true,
+    "frequency_hz": 820,
+    "duration_ms":  18,
+    "volume":       0.55
+  },
+  "diagnostics": {
+    "enabled":           true,
+    "fps_log_interval_s": 5.0
+  },
+  "logging": {
+    "level":    "INFO",
+    "log_dir":  "logs"
+  }
+}
