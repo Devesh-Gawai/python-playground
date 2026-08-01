@@ -1,7 +1,7 @@
 # 🎮 Python FPS Survival — Ursina Game
 
 <p align="center">
-  <img src="first_game/Screenshot%202026-08-01%20142525.png" alt="Python FPS Survival gameplay" width="900">
+  <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/first_game/Screenshot%202026-08-01%20142525.png" alt="Python FPS Survival gameplay" width="900">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ The game drops the player into an open environment where enemies continuously sp
 ## 🎬 Gameplay
 
 <p align="center">
-  <img src="first_game/gameplay.gif" alt="Gameplay recording" width="900">
+  <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/first_game/gameplay.gif" alt="Gameplay recording" width="900">
 </p>
 
 <p align="center">
@@ -44,11 +44,11 @@ The game drops the player into an open environment where enemies continuously sp
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="first_game/Screenshot%202026-08-01%20142525.png" alt="Gameplay screenshot 1" width="100%">
+      <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/first_game/Screenshot%202026-08-01%20142525.png" alt="Gameplay screenshot 1" width="100%">
       <br><sub><b>Combat View</b></sub>
     </td>
     <td width="50%" align="center">
-      <img src="first_game/Screenshot%202026-08-01%20142543.png" alt="Gameplay screenshot 2" width="100%">
+      <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/first_game/Screenshot%202026-08-01%20142543.pngg" alt="Gameplay screenshot 2" width="100%">
       <br><sub><b>Survival Gameplay</b></sub>
     </td>
   </tr>
