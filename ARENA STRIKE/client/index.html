@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ARENA STRIKE</title>
+<link rel="stylesheet" href="style.css?v=4">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<!-- ===================== MAIN MENU ===================== -->
+<div id="menu-screen" class="screen">
+  <div class="menu-box">
+    <h1 class="title">ARENA STRIKE</h1>
+    <p class="subtitle">A local-network first-person shooter</p>
+
+    <div class="field">
+      <label>Your Name</label>
+      <input id="name-input" maxlength="16" placeholder="Player" autocomplete="off">
+    </div>
+
+    <div class="mode-buttons">
+      <button id="btn-singleplayer" class="big-btn">SINGLE PLAYER<br><span>Fight AI bots</span></button>
+      <button id="btn-multiplayer" class="big-btn">MULTIPLAYER<br><span>Play with others on this WiFi</span></button>
+    </div>
+
+    <div id="mp-options" class="hidden">
+      <div class="field">
+        <label>Server Address</label>
+        <input id="server-input" placeholder="auto-detected" autocomplete="off">
+      </div>
+      <button id="btn-connect" class="big-btn small">CONNECT &amp; PLAY</button>
+      <p id="mp-status" class="status-text"></p>
+    </div>
+
+    <p class="hint">WASD move &middot; Mouse look &middot; Left-click shoot &middot; R reload &middot; Space jump &middot; Shift sprint &middot; Esc menu</p>
+  </div>
+</div>
+
+<!-- ===================== CLICK TO PLAY OVERLAY ===================== -->
+<div id="lock-screen" class="screen hidden">
+  <div class="menu-box center-text">
+    <h2>Click to enter the arena</h2>
+    <p class="hint">(Your mouse will be captured for looking around. Press Esc anytime to exit.)</p>
+    <button id="btn-lock" class="big-btn small">CLICK TO PLAY</button>
+  </div>
+</div>
+
+<!-- ===================== DEATH SCREEN ===================== -->
+<div id="death-screen" class="screen hidden">
+  <div class="menu-box center-text">
+    <h2 id="death-text">YOU DIED</h2>
+    <p id="death-sub" class="hint"></p>
+  </div>
+</div>
+
+<!-- ===================== HUD ===================== -->
+<div id="hud" class="hidden">
+  <div id="crosshair">
+    <span></span><span></span><span></span><span></span>
+  </div>
+  <div id="hitmarker"></div>
+  <div id="damage-vignette"></div>
+
+  <div id="hud-top-left">
+    <div id="scoreboard-line">K <span id="hud-kills">0</span> &nbsp;/&nbsp; D <span id="hud-deaths">0</span></div>
+  </div>
+
+  <div id="hud-bottom-left">
+    <div class="bar-wrap">
+      <div class="bar-label">HP</div>
+      <div class="bar-bg"><div id="health-fill" class="bar-fill health"></div></div>
+      <div id="health-num" class="bar-num">100</div>
+    </div>
+  </div>
+
+  <div id="hud-bottom-right">
+    <div id="ammo-display"><span id="ammo-cur">30</span> / <span id="ammo-max">30</span></div>
+    <div id="reload-hint" class="hidden">RELOADING...</div>
+  </div>
+
+  <div id="killfeed"></div>
+
+  <div id="mp-connection-status"></div>
+
+  <!-- Touch controls (shown only on touch devices) -->
+  <div id="touch-controls" class="hidden">
+    <div id="touch-joystick-zone">
+      <div id="joystick-base"><div id="joystick-knob"></div></div>
+    </div>
+    <div id="touch-look-zone"></div>
+    <div id="touch-jump" class="touch-btn">JUMP</div>
+    <div id="touch-reload" class="touch-btn">RELOAD</div>
+    <div id="touch-fire" class="touch-btn fire">FIRE</div>
+  </div>
+</div>
+
+<div id="loading-screen" class="screen">
+  <div class="menu-box center-text">
+    <h2>Loading arena...</h2>
+  </div>
+</div>
+
+<script type="module" src="game.js?v=4"></script>
+</body>
+</html>
