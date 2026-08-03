@@ -88,6 +88,32 @@ function wallTexture() {
   }, 256);
 }
 
+let _armyTexCache = null;
+function armyTexture() {
+  // Woodland-style army camo, matching the reference pattern: olive green
+  // base with dark green / brown / khaki / near-black blotches.
+  if (_armyTexCache) return _armyTexCache;
+  const palette = ['#3f4a26', '#5a4530', '#a89a6b', '#141008'];
+  _armyTexCache = makeCanvasTexture((ctx, s) => {
+    ctx.fillStyle = '#5c6b34';
+    ctx.fillRect(0, 0, s, s);
+    for (let i = 0; i < 55; i++) {
+      ctx.fillStyle = palette[Math.floor(Math.random() * palette.length)];
+      const cx = Math.random() * s, cy = Math.random() * s;
+      const r = 16 + Math.random() * 34;
+      ctx.beginPath();
+      for (let a = 0; a <= Math.PI * 2 + 0.01; a += 0.45) {
+        const rr = r * (0.55 + Math.random() * 0.65);
+        const px = cx + Math.cos(a) * rr, py = cy + Math.sin(a) * rr;
+        if (a === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.fill();
+    }
+  }, 256);
+  return _armyTexCache;
+}
+
 function nameSprite(text, color = '#ffffff') {
   const canvas = document.createElement('canvas');
   canvas.width = 256; canvas.height = 64;
@@ -461,6 +487,16 @@ class Weapon {
   }
 }
 
+function muzzleWorldPos(characterGroup) {
+  // Returns the world-space position of a character's gun muzzle (bot or
+  // remote player), so tracers/shots visually originate from the visible
+  // gun instead of a generic point on the body.
+  if (characterGroup && characterGroup.userData && characterGroup.userData.muzzle) {
+    return characterGroup.userData.muzzle.getWorldPosition(new THREE.Vector3());
+  }
+  return characterGroup.position.clone();
+}
+
 function createTracer(scene, from, to) {
   const geo = new THREE.BufferGeometry().setFromPoints([from, to]);
   const mat = new THREE.LineBasicMaterial({ color: 0xfff4c2, transparent: true, opacity: 0.9 });
@@ -484,11 +520,15 @@ const BOT_COUNT = 5;
 const BOT_SIGHT_RANGE = 26;
 const BOT_ATTACK_RANGE = 22;
 
-function buildBotMesh(color) {
+function buildBotMesh(colorOrTexture) {
   const group = new THREE.Group();
-  const bodyMat = new THREE.MeshStandardMaterial({ color, roughness: 0.6 });
-  const headMat = new THREE.MeshStandardMaterial({ color: 0xe0b488, roughness: 0.7 });
-  const eyeMat = new THREE.MeshStandardMaterial({ color: 0x14161a, roughness: 0.25 });
+  const isTexture = typeof colorOrTexture !== 'number';
+  const bodyMat = isTexture
+    ? new THREE.MeshStandardMaterial({ map: colorOrTexture, roughness: 0.85 })
+    : new THREE.MeshStandardMaterial({ color: colorOrTexture, roughness: 0.6 });
+  const headMat = new THREE.MeshStandardMaterial({ color: 0x0c0c0c, roughness: 0.5 });
+  const eyeMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.2 });
+  const gunMat = new THREE.MeshStandardMaterial({ color: 0x24262b, roughness: 0.4, metalness: 0.5 });
 
   const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.35, 0.9, 4, 8), bodyMat);
   body.position.y = 0.9;
@@ -506,7 +546,24 @@ function buildBotMesh(color) {
   const eyeR = new THREE.Mesh(eyeGeo, eyeMat);
   eyeR.position.set(0.09, 1.68, -0.19);
 
-  group.add(body, head, eyeL, eyeR);
+  // A visible held gun (front = local -Z, matching the facing convention),
+  // with an invisible marker at the barrel tip so tracers/muzzle flashes
+  // can originate from the gun's exact position rather than the body.
+  const gunBody = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.09, 0.3), gunMat);
+  gunBody.position.set(0.26, 1.05, -0.15);
+  const gunBarrel = new THREE.Mesh(new THREE.CylinderGeometry(0.016, 0.016, 0.28, 8), gunMat);
+  gunBarrel.rotation.x = -Math.PI / 2;
+  gunBarrel.position.set(0.26, 1.07, -0.42);
+  const gunMag = new THREE.Mesh(new THREE.BoxGeometry(0.045, 0.14, 0.06), gunMat);
+  gunMag.position.set(0.26, 0.95, -0.08);
+  gunBody.castShadow = true; gunBarrel.castShadow = true; gunMag.castShadow = true;
+
+  const muzzle = new THREE.Object3D();
+  muzzle.position.set(0.26, 1.07, -0.58);
+  group.add(muzzle);
+  group.userData.muzzle = muzzle;
+
+  group.add(body, head, eyeL, eyeR, gunBody, gunBarrel, gunMag);
   group.userData.bodyMesh = body;
   group.userData.headMesh = head;
   return group;
@@ -638,7 +695,7 @@ class Bot {
       this.fireCooldown = 0.9 + Math.random() * 0.6;
       const accuracy = THREE.MathUtils.clamp(1 - distToPlayer / BOT_SIGHT_RANGE, 0.15, 0.8);
       const hit = Math.random() < accuracy;
-      const from = pos.clone(); from.y = 1.4;
+      const from = muzzleWorldPos(this.mesh);
       const to = playerPos.clone();
       onShoot(from, to, hit);
     }
@@ -1166,7 +1223,7 @@ function remoteGroundY(state) {
 
 function ensureRemoteMesh(id, state) {
   if (remoteMeshes.has(id)) return remoteMeshes.get(id);
-  const group = buildBotMesh(0x4b8fd1);
+  const group = buildBotMesh(armyTexture());
   const tag = nameSprite(state.name || 'Player', '#7fe7ff');
   tag.position.y = 2.05;
   group.add(tag);
@@ -1214,7 +1271,7 @@ function updateNetworking(dt) {
     }
     if (ev.type === 'shoot' && remoteMeshes.has(ev.id)) {
       const rm = remoteMeshes.get(ev.id);
-      const from = new THREE.Vector3(ev.ox, ev.oy, ev.oz);
+      const from = muzzleWorldPos(rm.group);
       const dir = new THREE.Vector3(ev.dx, ev.dy, ev.dz).normalize();
       createTracer(scene, from, from.clone().addScaledVector(dir, 40));
     }
