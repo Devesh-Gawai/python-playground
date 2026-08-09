@@ -1,5 +1,9 @@
 # Arena Strike — Setup & Play Guide
 
+<p align="center">
+  <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/ARENA%20STRIKE/demo.gif" alt="Game Demo" width="800"/>
+</p>
+
 A first-person shooter you run from your own laptop. You (and anyone else on
 your WiFi) play it in a normal web browser — nobody needs to install
 anything except you, once, to start the server.
