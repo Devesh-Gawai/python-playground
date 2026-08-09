@@ -191,6 +191,10 @@ aren't visible"**
 
 ## 7. Honest expectations
 
+<p align="center">
+  <img src="https://github.com/Devesh-Gawai/python-playground/blob/main/ARENA%20STRIKE/gameplay.gif" alt="Game Demo" width="800"/>
+</p>
+
 This is a real, playable, good-looking browser FPS with working
 single-player bots and working local-network multiplayer — built with
 Three.js, running entirely from files on your laptop. It is **not** a
